@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>UCLA ECE Report 2020-2021</title>
-  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Changa+One&family=Poiret+One&family=Merienda+One&family=Norican&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
   <style>
@@ -30,6 +33,7 @@
     }
 
     .panel {
+      display: flex;
       background: #6B0F9C;
       box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
       color: white;
@@ -46,15 +50,35 @@
       background-position: center;
       flex: 1;
       justify-content: center;
-      display: flex;
       flex-direction: column;
     }
 
-    .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-    .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
-    .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-    .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-    .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+    .panel1 { background-image:url(https://source.unsplash.com/6k2wkqGMw1I/1500x1500); filter: grayscale(.9); }
+    .panel2 { background-image:url(https://source.unsplash.com/13g9FZqVvNY/1500x1500); filter: grayscale(.9); }
+    .panel3 { background-image:url(https://source.unsplash.com/uNyF_FXn4qw/1500x1500); filter: grayscale(.9);}
+    .panel4 { background-image:url(https://source.unsplash.com/wFW4zlulBT8/1500x1500); filter: grayscale(.9);}
+    .panel5 { background-image:url(https://source.unsplash.com/161u7xxBRI4/1500x1500); filter: grayscale(.9);}
+    .panel6 { background-image:url(https://source.unsplash.com/3cIPFNW3wog/1500x1500); filter: grayscale(.9);}
+    .panel7 { background-image:url(https://source.unsplash.com/KJ241ZAOYwU/1500x1500); filter: grayscale(.9);}
+    .panel8 { background-image:url(https://source.unsplash.com/i_14EbINjKY/1500x1500); filter: grayscale(.9);}
+
+/* unsplash:
+girl in sound booth: X-etICbUKec
+light cube: KJ241ZAOYwU
+bubble: 6k2wkqGMw1I
+phone and pen: SgmhqvhBIKg
+solar panel: HCha-UHkIg8
+iwatch: uNyF_FXn4qw
+Toyota concept car: 161u7xxBRI4
+student lab: fr5h_07OrPI
+engineer laptop: Hjez0AY_c4k
+propulsion i_14EbINjKY
+sound studio: wFW4zlulBT8
+radar antenna: 3cIPFNW3wog
+arm cast: 13g9FZqVvNY
+
+ */
+
 
     /* Flex Items */
     .panel > * {
@@ -62,9 +86,11 @@
       width: 100%;
       transition: transform 0.5s;
       flex: 1 0 auto;
-      display: flex;
       justify-content: center;
       align-items: center;
+      display: flex;
+      filter: grayscale(0.1);
+
     }
 
     .panel > *:first-child { transform: translateY(-100%); }
@@ -72,14 +98,24 @@
     .panel > *:last-child { transform: translateY(100%); }
     .panel.open-active > *:last-child { transform: translateY(0); }
 
+      /* <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Merienda+One&family=Norican&family=Rock+Salt&display=swap" rel="stylesheet"> */
+      /* font-family: 'Grand Hotel', 'Merienda One', 'Norican', 'Changa+One', 'Rock Salt', cursive;
+      font-family: 'Grand Hotel', cursive;
+      font-family: 'Merienda One', cursive;
+      font-family: 'Norican', cursive;
+      font-family: 'Rock Salt', cursive; */
     .panel p {
-      text-transform: uppercase;
-      font-family: 'Amatic SC', cursive;
+      /* text-transform: uppercase; */
+      font-family:'Poiret One', san serif;
       text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-      font-size: 2em;
+      font-size: 1em;
     }
 
     .panel p:nth-child(2) {
+      font-family:'Grand Hotel', cursive;
+      font-size: 2.4em;
+    }
+    .panel p:nth-child(3) {
       font-size: 4em;
     }
 
@@ -98,29 +134,57 @@
 
   <div class="panels">
     <div class="panel panel1">
-      <p>Hey</p>
-      <p>Let's</p>
-      <p>Dance</p>
+      <p>Professor Suhas </p>
+      <p>Diggavi</p>
+      <p></p>
+      <p>Received Amazon Research Award and 2021 Guggenheim Fellowship
+      </p>
     </div>
     <div class="panel panel2">
-      <p>Give</p>
-      <p>Take</p>
-      <p>Receive</p>
+      <p>Professor Achuta </p>
+      <p>Kadambi</p>
+      <p></p>
+      <p>Featured in Science Journal and Received NSF Career Award
+      </p>
     </div>
     <div class="panel panel3">
-      <p>Experience</p>
-      <p>It</p>
-      <p>Today</p>
+      <p>Professor  Xiang Anthony </p>
+      <p>Chen</p>
+      <p></p>
+      <p>Received NSF Career Award and Young Investigator Award for AI Research
+        </p>
     </div>
     <div class="panel panel4">
-      <p>Give</p>
-      <p>All</p>
-      <p>You can</p>
+      <p>Professor Sam</p>
+      <p> Emaminejad</p>
+      <p></p>
+      <p>Research Group featured on Cover of Lab on a Chip</p>
     </div>
     <div class="panel panel5">
-      <p>Life</p>
-      <p>In</p>
-      <p>Motion</p>
+      <p>Professor Kang</p>
+      <p> Wang</p>
+      <p></p>
+      <p>Receives NSF Grant to Improve Quantum Computing Chips</p>
+    </div>
+    <div class="panel panel6">
+      <p>Distinguished Professor Yahya</p>
+      <p> Rahmat-Samii</p>
+      <p></p>
+      <p>Released New Book and Co-authored Best Paper Award of AIAA
+      </p>
+    </div>
+    <div class="panel panel7">
+      <p>Alumni Adrian</p>
+      <p> Tang</p>
+      <p></p>
+      <p>Recognized as 2021 Outstanding Young Engineer by IEEE MTT-S
+      </p>
+    </div>
+    <div class="panel panel8">
+      <p>UCLA Alumna</p>
+      <p> Alumni</p>
+      <p></p>
+      <p> InspiringOthers through Work at NASA JPL</p>
     </div>
   </div>
 
@@ -128,7 +192,7 @@
     const panels = document.querySelectorAll('.panel');
 
     function toggleOpen() {
-      console.log('Hello');
+      console.log('Hello, I\'ve been toggled!');
       this.classList.toggle('open');
     }
 
