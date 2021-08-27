@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import "./variables.scss";
+
+.header {
+  display: flex;
+  z-index: 20;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1.3em;
+
+  .logos{
+    margin: 0 2rem;
+    flex: none;
+    position: fixed;
+
+    .logo-image{
+      width: 98px;
+      height: auto;
+    }
+  }
+
+  ul.menu-container{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+    background: transparent;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 13% 1em 13%;
+    height: 44px;
+
+    a, li.menu-item{
+      // justify-self: flex-end;
+      color: $black-60;
+      padding-left: 1.2em;
+      padding-bottom: 0.3em;
+      font-weight: 500;
+      font-family: Oswald;
+      font-size: 1em;
+      opacity: 0.85;
+      cursor: pointer;
+      -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.2));
+      filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.2));
+      background-color: transparent;
+
+      &:hover,
+      &:active{
+        opacity: 1;
+        color: $black-80;
+        transform: all .8s ease-out;
+      }
+    }
+
+    /* Medium screens */
+    @media all and (max-width: 800px) {
+      .navigation {
+        /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        justify-content: space-around;
+      }
+    }
+
+    /* Small screens */
+    @media all and (max-width: 500px) {
+      .navigation {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+      }
+    }
+  }
+}

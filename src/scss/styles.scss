@@ -1,0 +1,96 @@
+@charset "utf-8";
+// @import "../config/paths.js";
+@import "./variables.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;500;700&family=Russo+One&display=swap");
+
+//use this to place font family in scss:
+// font-family: 'Lemon', cursive;
+// font-family: 'Libre Caslon Text', serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Lemon', sans-serif;
+
+html,
+body,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: $black-80;
+  background-color: transparent;;
+}
+h3{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+p {
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400;
+}
+p > span{
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400i;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+
+a{
+  color: $black-40;
+  text-decoration: none;
+  &:hover, &:active{
+    color: $black-20;
+  }
+}
+
+.App {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: $mercury;
+  color: $LightSlateGray;
+  background-image:  url("../assets/images/overlay.png"), url("../assets/images/pattern.svg");
+  background-position: top left, center center;
+  background-attachment: fixed, fixed;
+  background-size: auto, auto;
+  min-height: 100vh;
+  margin: auto;
+}
+
+@import "./article.scss";
+@import "./bubbles.scss";
+@import "./footer.scss";
+@import "./header.scss";
+@import "./mixins.scss";
+@import "./home.scss";

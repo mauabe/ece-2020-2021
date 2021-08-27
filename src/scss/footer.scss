@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import "./variables.scss";
+
+
+
+.site-footer{
+  display: flex;
+  background-color:$LightSlateGray;
+  opacity: 0.9;
+  height: 45px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 1 100%;
+        z-index: 10;
+
+    .footer-logo{
+      align-self: center;
+      padding-left: 3em;
+      padding-top: 0.4em;
+      width: 180px;
+      height: auto;
+    }
+
+    .footer-dept{
+      padding-right: 5em;
+      padding-left: 2em;
+      font-size: .9rem;
+      line-height: 1.2rem;
+      color: $black-20;
+      // opacity: 0.8;
+    }
+}

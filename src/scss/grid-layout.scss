@@ -1,0 +1,269 @@
+@charset "utf-8";
+@import "./variables.scss";
+
+.grid-layout {
+  display: grid;
+  grid-gap: 2em;
+  width: 100%;
+  grid-auto-flow: row;
+  // grid-template-columns: repeat(auto-fill, minmax(325px, 4fr)) ;
+  // grid-template-rows: repeat(2, 2fr);
+  // padding: 1em;
+
+  .full {
+    // grid-template-columns: 1fr ;
+    grid-auto-flow: row;
+    // grid-column: span 1;
+    align-content: start;
+    grid-gap: 1em;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    font-family: 'Lemon', cursive;
+    font-size: 1em;
+    color: $borderblue;
+    font-size:2.5em;
+    text-indent: 0;
+    // margin-left: 2em
+    text-indent: 1em;
+  }
+
+  h3.page-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2.2em;
+    color: $jaguar;
+    text-indent: 0;
+    margin: 0.5em 0 0.5em 0;
+    background: transparent;
+  }
+
+  h4.page-subtitle{
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 0;
+    // text-indent: 0;
+  }
+
+  .page-award{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    text-indent: 0;
+    text-align: left;
+  }
+  .page-name{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    text-indent: 0;
+  }
+  .page-text{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-indent: 0;
+    text-align:justify;
+    text-justify: inter-word;
+  }
+
+  .page-caption{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    text-indent: 0;
+    text-align: left;
+  }
+
+  .page-img{
+    grid-template-columns: 1fr;
+    text-indent: 0;
+    overflow: hidden;
+    // justify-content: start;
+    // height: 500px;
+    // min-width: 125px;
+    // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    img{
+      width: 450px;
+      height: 550px;
+      object-position: 50% 50%;
+      object-fit: contain;
+    }
+  }
+  .page-img.student-centers{
+    grid-template-columns: 1fr;
+    text-indent: 0;
+    overflow: hidden;
+
+    img{
+      // width: 450px;
+      height: 210px;
+      object-position: 50% 50%;
+      object-fit: contain;
+      margin: 0 1em;
+    }
+  }
+  .spacer{
+    height: 1em;
+    margin: 1em 0;
+  }
+
+  //page speciffic css
+  .hkn{
+    margin-bottom: 1.5em;
+  }
+
+  img.full-width-img {
+    width: 100%;
+    max-height: 200px;
+    float: left;
+    object-fit: cover;
+    object-position: 50% 45%;
+    overflow: hidden;
+    margin-bottom: 1.5em;
+  }
+
+  .prof-pics{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px , 4fr));
+    grid-gap: 2em;
+    padding: 0;
+    text-indent: 0;
+
+    img.fac{
+      width: 150px;
+      height: 190px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      object-fit: cover;
+      object-position: 50% 50%;
+      overflow: hidden;
+      margin-bottom: 0.4em;
+      transition: all 0.3s;
+      border-radius: 20px 5px;
+      border: 1px solid  $jaguar;
+    }
+    img.fac:hover{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    }
+  }
+
+  .researchcenters {
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 4fr));
+    grid-template-rows: auto ;
+    width: 100%;
+    align-items: start;
+    justify-content: space-between;
+
+    .research-center{
+      // overflow: hidden;
+      // max-width: 250px;
+      font-size: 1.1em;
+      margin-bottom: 1.5em;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      text-indent: 0;
+      text-align: left;
+
+      img.center-logo{
+        background-color: transparent;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+        transition: all 0.3s ease-in-out;
+        width: 250px;
+        height: 250px;
+        border-radius: 25px 5px 25px 5px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        margin: 0 3em 1em 0;
+        overflow: hidden;
+      }
+      .center-name{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
+        text-indent: 0;
+        text-align: left;
+      }
+      .center-prof{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+        text-indent: 0;
+        text-align: left;
+      }
+    }
+
+    .picture-area.none.researchcenters {
+      display: none;
+      left: 9999px;
+      top: 9999px;
+      max-height: 1px;
+    }
+    .none.researchcenters {
+      display: none;
+      left: 9999px;
+      top: 9999px;
+      max-height: 1px;
+    }
+
+    .research-center:hover{
+      img.center-logo{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+      }
+    }
+  }
+  .faculty-caption{
+    margin-bottom: 2em;
+  }
+
+  // .twocolumns{
+  //   display: grid;
+  //   grid-gap: 3em;
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-auto-flow: row;
+  //   align-content: start;
+  //   justify-content: space-between;
+  //   margin-bottom: 2em;
+  //   .half{
+  //     flex: 50%;
+  //     align-content: start;
+  //   }
+  //   .spacer{
+  //       height: 1em;
+  //   }
+  // }
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-layout {
+    // display: block;
+    grid-template-columns: 1fr;
+  }
+  .full {
+    grid-column: span 1;
+  }
+  img.fac{
+    width: 115px;
+    height: 180px;
+  }
+
+  div.page-img{
+    width: 300px;
+    height: 400px;
+  }
+}
