@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+//not used???
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+//not used???
+// @mixin flex($values) {
+//   -webkit-box-flex: $values;
+//   -moz-box-flex:  $values;
+//   -webkit-flex:  $values;
+//   -ms-flex:  $values;
+//   flex:  $values;
+// }
+
+//not used???
+// @mixin order($val) {
+//   -webkit-box-ordinal-group: $val;
+//   -moz-box-ordinal-group: $val;
+//   -ms-flex-order: $val;
+//   -webkit-order: $val;
+//   order: $val;
+// }
+
+
+//not used???
+// .wrapper {
+//   @include flexbox();
+// }
+
+//notused either???
+// .item {
+//   @include flex(1 200px);
+//   @include order(2);
+// }
+
+// transform:scale(1.5);
+// -ms-transform:scale(1.5); /* IE 9 */
+// -moz-transform:scale(1.5); /* Firefox */
+// -webkit-transform:scale(1.5); /* Safari and Chrome */
+// -o-transform:scale(1.5); /* Opera */

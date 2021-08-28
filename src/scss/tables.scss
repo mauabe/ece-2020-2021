@@ -1,0 +1,91 @@
+@charset "utf-8";
+@import "./variables.scss";
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 350px;
+  background-color: white;
+  vertical-align: center;
+}
+
+tr th {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  text-indent: 0;
+  padding: 1.5em;
+  background-color: $menublue--70;
+  color:$white;
+
+}
+td {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: $black-70;
+  align-self: center;
+  padding: 0.7em;
+  padding-left: 1.5em;
+  border-bottom: 1px solid $black-40;
+}
+td.right{
+  text-align: right;
+  padding-right: 2em;
+}
+tfoot tr{
+  align-items: center;
+  background-color:$menublue--50;
+  height: 1em;
+}
+
+tbody tr:hover {
+  background-color: $cardbottom ;
+}
+// tr:nth-child(even) {
+//   background-color: $black-20;
+// }
+
+tr.t-total{
+  background-color: $Gainsboro;
+  &:hover{
+    background-color: lighten($Gainsboro, 10) ;
+  }
+}
+tr.sub-head{
+  background-color: $LightSteelBlue;
+
+  &:hover{
+    background-color: darken($LightSteelBlue, 10) ;
+  }
+}
+tr.sub-total{
+  background-color: darken($Gainsboro, 8);
+
+  &:hover{
+    background-color: lighten($Gainsboro, 5) ;
+  }
+}
+
+
+.table-overview {
+  overflow-y: auto; //responsive
+  background-color: transparent;
+  border-radius: 5px;
+  align-items: start;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: all 0.3s;
+  min-width: 350px;
+  height: auto;
+  width: 100%;
+}
+
+ul, li, ul.card-bottom{
+  background-color: transparent;
+}
+
+.spacer{
+  margin: 1em 0;
+}
+
+@import "./grid-cards.scss";

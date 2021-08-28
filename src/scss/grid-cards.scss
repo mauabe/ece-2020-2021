@@ -1,0 +1,318 @@
+@charset "utf-8";
+@import "./variables.scss";
+
+.grid-cards{
+  display: grid;
+  grid-gap: 1.1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding: 1em;
+
+  h3.page-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2.2em;
+    color: $jaguar;
+    text-indent: 0;
+    margin: 0.5em 0 0.5em 0;
+    background: transparent;
+  }
+
+  .full {
+    grid-template-columns: 1fr ;
+    grid-auto-flow: row;
+    grid-gap: 1em;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .card-deck{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
+    grid-template-rows: auto ;
+    grid-gap: 1.5em;
+    text-indent: 0;
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+      min-width: 320px;
+      min-height: 300px;
+      border-radius: 4px;
+      background: $grey-lighter--30;
+      align-items: start;
+      padding: 1.2em;
+      max-width: 100%;
+
+      .frame{
+        justify-self: center;
+        border-radius: 25px 5px 25px 5px;
+        border: 1px solid $black-40;
+        align-items: center;
+        width: 150px;
+        height: 190px;
+        max-width: 150px;
+        margin: 0 auto 1em auto;
+        overflow: hidden;
+        position: relative;
+
+        img.card-pic-fellowship{
+          border: 0px ;
+          background-color: transparent;
+          width: 150px;
+          height: 190px;
+          object-fit: cover;
+          object-position: 50% 50%;
+          justify-self: center;
+        }
+        img.card-pic{
+          border: 0px ;
+          background-color: transparent;
+          width: 150px;
+          height: 190px;
+          object-fit: cover;
+          object-position: 50% 50%;
+          justify-self: center;
+        }
+      }
+
+      img.logo-pic{
+        border: 0px ;
+        margin:0.4em;
+        background-color: transparent;
+        width: 95%;
+        height: 190px;
+        object-fit: contain;
+        object-position: 50% 50%;
+        justify-self: center;
+
+        &.cover{
+          object-fit: cover;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+      }
+    }
+
+    .card-partner{
+      display: grid;
+      grid-auto-flow: row;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+      min-width: 320px;
+      min-height: 200px;
+      border-radius: 4px;
+      background: $grey-lighter--30;
+      align-items: center;
+      padding: 1em;
+
+      img.logo-pic{
+        border: 0px ;
+        background-color: transparent;
+        width: 95%;
+        height: 190px;
+        object-fit: contain;
+        object-position: 50% 50%;
+        justify-self: center;
+        &.cover{
+          object-fit: cover;
+        }
+      }
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+      }
+    }
+
+    // .overview{
+    //   display: grid;
+    //   // grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    //   grid-template-rows: auto ;
+    //   grid-gap: 2em;
+    //   text-indent: 0;
+    //   justify-items: center;
+    //   align-items: start;
+    // }
+
+    &.dept{
+      // grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+      grid-column-gap: 4.5em;
+      grid-row-gap: 3.5em;
+      width: 100%;
+      justify-self: center;
+      text-align: center;
+      margin-bottom: 2em;
+
+      .card.card-dept{
+        min-height:300px;
+        justify-self: center;
+        // max-width: 50%;
+        width: 95%;
+
+        .card-name{
+          font-family: 'Lemon', sans-serif;
+          font-size: 1.2em;
+          color: $amazon;
+          text-align: center;
+          margin-bottom: 0.5em;
+          line-height: 2.8;
+        }
+      }
+    }
+  }
+
+  .card-writers{
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    background: $grey-lighter--30;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    min-height:450px;
+    justify-self: center;
+    width: 98%;
+  }
+
+  .card-name{
+    font-family: 'Lemon', serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: $amazon;
+    text-justify: center;
+    margin-bottom: 0.5em;
+    line-height: 2.8;
+  }
+
+  .prof-name{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: $black-70;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .prof-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: $black-40;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  span.prof-title.dept{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500  ;
+    text-align: center;
+    font-size: 1.2em;
+    color: $black-40;
+    text-align: center;
+    padding-bottom: 0.8em;
+  }
+  .prof-name.dept{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: $black-60;
+    text-align: center;
+    margin-bottom: 0.8em;
+  }
+
+  li{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300  ;
+    text-align: left;
+    font-size: 1.2em;
+    color: $black-80;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  img.card-pic.book{
+    border-radius: 2px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    max-width: 150px;
+    width: 150px;
+    height: 190px;
+  }
+
+  .frame-book{
+    margin: 1em auto;
+    border: 2px solid $black-70;
+    align-items: center;
+    width: 150px;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  .frame-prof-book{
+    position: relative;
+    display: none;
+    transition: all 5.3s ease-in-out;
+    border: 2px solid $black-60;
+    border-radius: 25px 5px;
+
+    overflow: hidden;
+    z-index: 100;
+    top: 35px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+    transition: all 3.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  .card.book{
+    object-position: 50% 50%;
+    transition: all 0.3s ease;
+  }
+
+  // .card.book:hover{
+  //   position: relative;
+  //   // position: absolute;
+  //   .frame-prof-book{
+  //     position: absolute;
+  //     display: block;
+  //     overflow: hidden;
+  //     img.card-prof-book{
+  //       object-fit: cover;
+  //       object-position: 50% 50%;
+  //     }
+  //   }
+  // }
+
+  div.card-name{
+    font-family: 'Lemon', sans-serif;
+    font-size: 1.5em;
+    color: $amazon;
+    text-justify: center;
+    margin-bottom: 0.5em;
+  }
+
+
+  p > span {
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .frame {
+      max-height: auto;
+    }
+    .grid-cards{
+      grid-template-columns: 1fr;
+      .card-deck{
+        grid-template-columns: 1fr;
+        &.dept{
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}
