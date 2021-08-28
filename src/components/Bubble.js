@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-// import logo from '../assets/images/UCLA_footer_600.svg';
 import {NavLink} from "react-router-dom";
-import ReactHtmlParser from 'react-html-parser'; //, { processNodes, convertNodeToElement, htmlparser2 }
+import ReactHtmlParser from 'react-html-parser';
 
 class Bubble extends Component{
 
@@ -11,7 +10,7 @@ class Bubble extends Component{
   }
 
   handleBubbleClick = (e) => {
-    const{articleId} = this.props;
+    const {articleId} = this.props;
     e.preventDefault();
     this.props.onClick(articleId, e);
   }

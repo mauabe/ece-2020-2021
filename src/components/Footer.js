@@ -14,7 +14,7 @@ const Footer = () => {
           />
         </div>
         <div className="footer-dept">
-          Electrical and Computer Engineering Department - 2019-2020 Annual Report
+          Electrical and Computer Engineering Department - 2020-2021 Annual Report
         </div>
     </div>
   );

@@ -22,7 +22,7 @@ class Logos extends Component {
             className="logo-image"
             src={logoPick}
             alt="UCLA ECE logo"
-            title="UCLA Electrical and Computer Engineering 2019-2020"
+            title="UCLA Electrical and Computer Engineering 2020-2021"
           />
         </Link>
       </div>
