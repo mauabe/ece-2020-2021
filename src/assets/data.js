@@ -29,44 +29,44 @@ export const logos = {
 
 export const panels = [
   {
-    title: "1",
-    top: "Professor First Name",
-    professor: "Digavvi",
+    id: "1",
+    title: "Professor First Name",
+    name: "Digavvi",
     text: "Accomplished this and that",
     linkCopy: "more",
     image: "https://source.unsplash.com/6k2wkqGMw1I/1500x1500",
     link: "news1"
   },
   {
-    title: "2",
-    top: "Professor First Name",
-    professor: "",
+    id: "2",
+    title: "Professor First Name",
+    name: "",
     text: "Accomplished this and that",
     linkCopy: "more",
     image: "https://source.unsplash.com/13g9FZqVvNY/1500x1500",
     link: "news2"
   },
   {
-    title: "3",
-    top: "Professor First Name",
-    professor: "",
+    id: "3",
+    title: "Professor First Name",
+    name: "",
     text: "Accomplished this and that",
     linkCopy: "more",
     image: "https://source.unsplash.com/uNyF_FXn4qw/1500x1500",
     link: "news3"
   },
   {
-    title: "4",
-    top: "Professor First Name",
-    professor: "",
+    id: "4",
+    title: "Professor First Name",
+    name: "",
     text: "Accomplished this and that",
     linkCopy: "more",
     image: "https://source.unsplash.com/Xf071ws2Icg/1500x1500",
     link: "news4"
   },
   {
-    title: "5",
-    top: "Professor First Name",
+    id: "5",
+    title: "Professor First Name",
     professor: "",
     text: "Accomplished this and that",
     linkCopy: "more",
@@ -74,8 +74,8 @@ export const panels = [
     link: "news5"
   },
   {
-    title: "6",
-    top: "Professor First Name",
+    id: "6",
+    title: "Professor First Name",
     professor: "",
     text: "Accomplished this and that",
     linkCopy: "more",
@@ -83,18 +83,18 @@ export const panels = [
     link: "news6"
   },
   {
-    title: "7",
-    top: "Professor First Name",
-    professor: "",
+    id: "7",
+    title: "Professor First Name",
+    name: "",
     text: "Accomplished this and that",
     linkCopy: "more",
     image: "https://source.unsplash.com/KJ241ZAOYwU/1500x1500",
     link: "news7"
   },
   {
-    title: "8",
-    top: "Professor First Name",
-    professor: "",
+    id: "8",
+    title: "Professor First Name",
+    name: "",
     text: "Accomplished this and that",
     linkCopy: "more",
     image: "https://source.unsplash.com/Ljz_Wmk7t7g/1500x1500",
