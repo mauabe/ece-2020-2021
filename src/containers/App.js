@@ -31,7 +31,7 @@ class App extends Component {
           <Route path='/overview' component={Overview}/>
           <Route path='/alumni' component={Alumni}/>
           <Route path='/news' render={() => <Redirect to="/news/chair" />} />,
-          <Route path='/highlights' render={() => <Redirect to="/highlights/jarrahi" />} />,
+          <Route path='/highlights' render={() => <Redirect to="/highlights/highlights0" />} />,
           <Route path='/students' render={() => <Redirect to="/students/awardsundergrad"  />}/>,
           <Route path='/faculty' render={() => <Redirect to="/faculty/ces" />}/>,
           <Route path='/overview' render={() => <Redirect to="/overview/researchcenters" />}/>,
