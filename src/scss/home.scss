@@ -83,7 +83,7 @@
         text-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
       }
 
-      .panel-link-button{
+      .panelLinkButton{
         font-family:'Quattrocento Sans', sans-serif;
         font-weight: 700;
         font-size: 0.8em;
@@ -135,12 +135,12 @@
 
 
   .panel.active:hover { filter: grayscale(0.15); filter: sepia(0.2); }
-  .panel > *:first-child { transform: translateY(-100%); }
-  .panel.active:hover > *:first-child { transform: translateY(55%); }
-  .panel > *:last-child { transform: translateY(100%); }
-  .panel > *:nth-child(2) { transform: translateY(220%); color: orange;}
-  .panel.active:hover > *:last-child { transform: translateY(-90%); }
-  .panel.active > *:nth-child(3) { transform: translateY(140%); }
+  .panelTitle { transform: translateY(-100%); }
+  .panelTitle.active:hover > *:first-child { transform: translateY(55%); }
+  .panelText { transform: translateY(100%); }
+  .panelLinkButton { transform: translateY(220%); color: orange;}
+  .panelText.active:hover { transform: translateY(-90%); }
+  .panelText.active { transform: translateY(140%); }
 
   @media only screen and (max-width: 600px) {
     display: flex;
