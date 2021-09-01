@@ -28,15 +28,18 @@
     // transform: perspective(1000px) translateX(calc(100% * var(--offset)))
     //   rotateY(calc(-45deg * var(--dir)));
 
-  .panel > * {
+  .panel{
     margin: 0;
     width: 100%;
     transition: transform 0.5s;
-    flex: 1 0 auto;
-    align-items: center;
+    flex: 1 1 auto;
     display: flex;
 
     .panelContent {
+      display: flex;
+      flex-direction: column;
+      // margin: 0;
+      width: 100%;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -44,31 +47,28 @@
       justify-content: center;
       color: white;
       font-family:'Quattrocento Sans', sans-serif;
+      // filter: grayscale(0.8);
+      // filter: sepia(25%);
 
-      .panelBackground {
-        opacity: 0.8;
-        transform: none;
-        filter: grayscale(0.9);
-        filter: sepia(0);
-      }
 
-      .panelTitle, .panelText {
+      p.panelTitle, p.panelText {
         font-family:'Quattrocento Sans', sans-serif;
         font-size: 1.3rem;
         font-weight: normal;
         letter-spacing: 0.2ch;
         color: white;
-        margin: 0 1rem;
+        margin: 0 1rem 0 1rem;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.72);
         position: absolute;
         // background: transparent;
       }
 
-      .panelTitle {
+      p.panelTitle {
+        transform: translateY(-100%);
         top: 30%;
       }
 
-      .panelName {
+      p.panelName {
         position: absolute;
         top: 50%;
         font-family:'Grand Hotel', cursive;
@@ -78,9 +78,9 @@
         margin: 0 1rem;
       }
 
-      .panelText {
+      p.panelText {
         top: 70%;
-        text-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+        transform: translateY(100%);
       }
 
       .panelLinkButton{
@@ -94,13 +94,11 @@
         color: white;
         position: absolute;
         transition: opacity 0.35s;
-        border: 5px solid magenta;
         background-color: orange;
-        opacity: 0.9;
+        border: 5px solid magenta; //where?
 
         &:hover{
           opacity: 1;
-          box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.25);
         }
         &:focus {
           outline: 18px solid blue;
@@ -111,16 +109,16 @@
           // text-shadow: 15px 15px 15px $DimGray;
 
           &:first-child {
-            transition: opacity 0.42s;
+            transition: opacity 0.52s;
             span{ opacity: 1; }
 
           }
           &:nth-child(2) {
-              transition: opacity 0.64s;
+              transition: opacity 0.8s;
               span{ opacity: 1; }
           }
           &:last-child {
-              transition: opacity 0.86s;
+              transition: opacity 1s;
               span{ opacity: 1; }
           }
         }
@@ -131,16 +129,22 @@
       flex: 5;
       font-size: 40px;
     }
+
+    &:hover{
+      filter: grayscale(0.10);
+      filter: sepia(0);
+
+      .panelTitle{ transform: translateY(55%); }
+      .panelText{
+        transform: translateY(-90%);
+        transform: translateY(140%)
+      }
+      .panelLinkButton{ opacity: 1; }
+    }
+
   } // end of .panel
 
 
-  .panel.active:hover { filter: grayscale(0.15); filter: sepia(0.2); }
-  .panelTitle { transform: translateY(-100%); }
-  .panelTitle.active:hover > *:first-child { transform: translateY(55%); }
-  .panelText { transform: translateY(100%); }
-  .panelLinkButton { transform: translateY(220%); color: orange;}
-  .panelText.active:hover { transform: translateY(-90%); }
-  .panelText.active { transform: translateY(140%); }
 
   @media only screen and (max-width: 600px) {
     display: flex;
@@ -152,53 +156,49 @@
 } //end panelsContainer
 
 
-
-
 // .panelContent {
 //   opacity: 1;
 // }
 
-
-
   .panel0 {
     background-image: 'url(https://source.unsplash.com/6k2wkqGMw1I/1500x1500)';
-    filter: grayscale(0.2);
-    filter: sepia(95%);
+    filter: grayscale(0.8);
+    // filter: sepia(0.2);
   }
   .panel1 {
     background-image: 'url(https://source.unsplash.com/13g9FZqVvNY/1500x1500)';
-    filter: grayscale(0.29);
-    filter: sepia(75%);
+    filter: grayscale(0.8);
+    // filter: sepia(0.2);
   }
   .panel2 {
     background-image: 'url(https://source.unsplash.com/uNyF_FXn4qw/1500x1500)';
-    filter: grayscale(0.2);
-    filter: sepia(55%);
+    filter: grayscale(0.8);
+    // filter: sepia(0.2);
   }
   .panel3 {
     background-image: 'url(https://source.unsplash.com/Xf071ws2Icg/1500x1500)';
-    filter: grayscale(0.2);
-    filter: sepia(35%);
+    filter: grayscale(0.8);
+    // filter: sepia(0.2);
   }
   .panel4 {
     background-image: 'url(https://source.unsplash.com/161u7xxBRI4/1500x1500)';
-    filter: grayscale(.2);
-    filter: sepia(25%);
+    filter: grayscale(0.8);
+    // filter: sepia(0.2);
   }
   .panel5 {
     background-image: 'url(https://source.unsplash.com/3cIPFNW3wog/1500x1500)';
-    filter: grayscale(.2);
-    filter: sepia(55%);
+    filter: grayscale(0.8);
+    // filter: sepia(0.2);
   }
   .panel6 {
     background-image: 'url(https://source.unsplash.com/KJ241ZAOYwU/1500x1500)';
-    filter: grayscale(.2);
-    filter: sepia(75%);
+    filter: grayscale(0.2);
+    // filter: sepia(0.2);
   }
   .panel7 {
     background-image: 'url(https://source.unsplash.com/Ljz_Wmk7t7g/1500x1500)';
-    filter: grayscale(.2);
-    filter: sepia(95%);
+    filter: grayscale(0.8);
+    // filter: sepia(0.2);
   }
 
     /* unsplash:
@@ -243,9 +243,4 @@
 .panel.active {
   flex: 8;
   font-size: 40px;
-}
-@media only screen and (max-width: 600px) {
-  .panel p {
-    font-size: 1.2em;
-  }
 }

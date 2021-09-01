@@ -67,7 +67,7 @@ export const panels = [
   {
     id: "4",
     title: "Professor Kang",
-    professor: "Wang",
+    name: "Wang",
     text: "Received NSF Grant to Improve Quantum Computing Chips",
     linkCopy: "more",
     image: "https://source.unsplash.com/161u7xxBRI4/1500x1500",
@@ -76,7 +76,7 @@ export const panels = [
   {
     id: "5",
     title: "Distinguished Professor Yahya",
-    professor: "Rahmat-Samii",
+    name: "Rahmat-Samii",
     text: "Released New Book and Co-authored Best Paper Award of AIAA",
     linkCopy: "more",
     image: "https://source.unsplash.com/3cIPFNW3wog/1500x1500",
