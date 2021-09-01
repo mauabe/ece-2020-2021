@@ -100,7 +100,7 @@ function Panel({ panel, offset }) {
           <Link to={`/news/${panel.link}`} >
             <div className="panelLinkButton">
               <span>more
-                <span className="panel-link-elipsis">
+                <span className="panelLinkElipsis">
                   <span>.</span><span>.</span><span>.</span>
                 </span>
               </span>
