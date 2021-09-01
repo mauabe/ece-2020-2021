@@ -43,6 +43,10 @@ function usePanel(active) {
       el.removeEventListener("mousemove", handleMouseMove);
     };
   }, [active]);
+  console.log('React useEffect return ref::', ref)
+  console.log('React useEffect return ref::', ref)
+  console.log('React useEffect return ref::', ref)
+  console.log('React useEffect return ref::', ref)
 
   return ref;
 }
@@ -71,6 +75,7 @@ const panelReducer = (state, event) => {
 function Panel({ panel, offset }) {
   const active = offset === 0 ? true : null;
   const ref = usePanel(active);
+  //receive a single object form data.panels
 
   return (
     <div
@@ -82,22 +87,26 @@ function Panel({ panel, offset }) {
         "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
       }}
     >
-        <BrowserRouter basename="/2020-2021"/>
-        <div
-          className={`panel${panel.id}`}
-          style={{
-            backgroundImage: `url(${panel.image})`
-          }}
-        >
-          <div className="panelContent">
-            <p className="panelTitle">{panel.title}</p>
-            <p className="panelName">{panel.name}</p>
-            <p className="panelText">{panel.text}</p>
-            <div className="linkButton">
-              <Link to={`/news/${panel.link}`} > more ...</Link>
+      <BrowserRouter basename="/2020-2021"/>
+        <div className="panelContent">
+          <div
+            className={`panelBackground panel${panel.id}`}
+            style={{
+              backgroundImage: `url(${panel.image})`
+            }}
+          >
+          <p className="panelTitle">{panel.title}</p>
+          <p className="panelName">{panel.name}</p>
+          <p className="panelText">{panel.text}</p>
+          <Link to={`/news/${panel.link}`} > more
+            <div className="panelLinkBbutton">
+              <span className="panel-link-elipsis">
+                <span>.</span><span>.</span><span>.</span>
+              </span>
             </div>
-          </div>
+          </Link>
         </div>
+      </div>
     </div>
   );
 }
