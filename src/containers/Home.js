@@ -88,24 +88,24 @@ function Panel({ panel, offset }) {
       }}
     >
       <BrowserRouter basename="/2020-2021"/>
-        <div className="panelContent">
-          <div
-            className={`panelBackground panel${panel.id}`}
-            style={{
-              backgroundImage: `url(${panel.image})`
-            }}
-          >
+        <div
+          className={`panelContent panel${panel.id}`}
+          style={{
+            backgroundImage: `url(${panel.image})`
+          }}
+        >
           <p className="panelTitle">{panel.title}</p>
           <p className="panelName">{panel.name}</p>
           <p className="panelText">{panel.text}</p>
-          <Link to={`/news/${panel.link}`} > more
-            <div className="panelLinkBbutton">
-              <span className="panel-link-elipsis">
-                <span>.</span><span>.</span><span>.</span>
+          <Link to={`/news/${panel.link}`} >
+            <div className="panelLinkButton">
+              <span>more
+                <span className="panel-link-elipsis">
+                  <span>.</span><span>.</span><span>.</span>
+                </span>
               </span>
             </div>
           </Link>
-        </div>
       </div>
     </div>
   );
