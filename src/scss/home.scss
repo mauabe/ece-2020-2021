@@ -4,7 +4,7 @@
 .content-area{
   display: flex;
   flex-direction: column;
-  flex: 1 1 100%;
+  // flex: 1 1 100%;
   .page{
     display: flex;
     flex-direction: column;
@@ -16,13 +16,13 @@
 
 .panelsContainer {
   flex: 1 1 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
   min-height: 80vh;
   overflow: hidden;
   flex-direction: row;
   flex-wrap: no-wrap;
   display: flex;
-  z-index: 20;
+  // z-index: 20;
 
     // transform-style: preserve-3d;
     // transform: perspective(1000px) translateX(calc(100% * var(--offset)))
@@ -31,100 +31,89 @@
   .panel{
     margin: 0;
     width: 100%;
-    // transition: transform 0.5s;
-    flex: 1 1 auto;
+    flex: 1 1 100%;
     display: flex;
+    filter: grayscale(0.8);
 
     .panelContent {
       display: flex;
       flex-direction: column;
+      flex: 1 0 100%;
       width: 100%;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      font-family:'Quattrocento Sans', sans-serif;
-      transition:
-        opacity 0.5s ease-in-out 0.5s,
-        font-size 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1),
-        flex 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1);
       color: white;
       align-items: flex-start;
-      justify-content: space-evenly;
+      justify-content: center;
+      font-family:'Quattrocento Sans', sans-serif;
+      transition:
+        opacity 0.5s ease-in-out 0.5s;
+      // font-size 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1),
+      // flex 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1);
+      // justify-content: space-evenly;
       // margin: 0;
-      // filter: grayscale(0.8);
-      // filter: sepia(25%);
 
       .panelTitle {
+        display: flex;
+        flex: 1 1 100%;
+        flex-direction: column;
         font-family:'Quattrocento Sans', sans-serif;
         font-size: 1.3rem;
         font-weight: normal;
         letter-spacing: 0.5ch;
         margin: 0 1rem ;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.72);
-        top: 35%;
-        position: absolute;
+        top: 40%;
+        position: relative;
+        .panelName {
+          top: 50%;
+          font-family:'Grand Hotel', cursive;
+          font-size: 2.4em;
+          font-weight: 700;
+          margin: 0 1rem;
+          &:hover{
+            color: $mercury;
+          }
+        }
+        .panelText {
+          font-family:'Quattrocento Sans', sans-serif;
+          font-size: 1.3rem;
+          font-weight: normal;
+          letter-spacing: 0.2ch;
+          opacity: 0.01;
+          margin: 0 1rem;
+          padding: 1em 0;
+          // position: absolute;
+          // align-self: flex-start;
+          // top: 65%;
+          // bottom: 25%;
+
+        }
       }
 
-      .panelText {
-        font-family:'Quattrocento Sans', sans-serif;
-        font-size: 1.3rem;
-        font-weight: normal;
-        letter-spacing: 0.2ch;
-        margin: 0 1rem 0 1rem;
-        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72);
-        position: absolute;
-        align-self: center;
-        top: 65%;
-      }
-
-      .panelName {
-        position: absolute;
-        top: 50%;
-        font-family:'Grand Hotel', cursive;
-        font-size: 2.4em;
-        font-weight: 700;
-        margin: 0 1rem;
-      }
 
       .panelLinkButton{
-        bottom: 10%;
+        bottom: 5%;
         font-family:'Quattrocento Sans', sans-serif;
         font-weight: 700;
-        font-size: 0.8rem;
-        text-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
-        width: 5.5rem;
-        height: 2rem;
+        font-size: 1rem;
+        width: 5rem;
+        height: 1.5rem;
         opacity: 0;
         position: absolute;
         transition: opacity 0.35s ease-in-out 0.2s;
         background-color: orange;
-        border: 5px solid magenta; //where?
+        align-self: flex-end;
+        justify-content: center;
+        margin: 0 1rem;
+        padding: 0 1rem;
 
-        &:hover{
-          opacity: 1;
-        }
-        &:focus {
-          outline: 18px solid blue;
-        }
-
-        .panelLinkElipsis{
+        /*.panelLinkElipsis{
           transition: opacity 0.2s ease-in-out 0.2s;
-          // opacity: 1;
+          opacity: 1;
+        }*/
 
-          &:first-child {
-            transition: opacity 0 easy-in-out 0.2s;
-            span{ opacity: 1; }
-
-          }
-          &:nth-child(2) {
-              transition: opacity 0 easy-in-out 0.2s;
-              span{ opacity: 1; }
-          }
-          &:last-child {
-              transition: opacity 0 easy-in-out 0.2s;
-              span{ opacity: 1; }
-          }
-        }
       }
     } //end panelContent
 
@@ -135,17 +124,23 @@
 
     &:hover{
       filter: grayscale(0.1);
-      // filter: sepia(0);
+      // flex: 5;
 
-      .panelTitle,
-      .panelText,
-      .panelLinkButton{
+      // .panelTitle,
+      // .panelText,
+      // .panelLinkButton{
+      //   opacity: 1;
+      // }
+      .panelText{
+        transition: opacity 0.1s ease-in-out 0.3s;
         opacity: 1;
-        flex: 5;
-        font-size: 40px;
       }
-    }
+      .panelLinkButton, .panelText{
+        transition: opacity 0.7s ease-in-out 0.4s;
+        opacity: 1;
+      }
 
+    }
   } // end of .panel
 
 
@@ -159,49 +154,29 @@
 } //end panelsContainer
 
 
-// .panelContent {
-//   opacity: 1;
-// }
-
   .panel0 {
     background-image: 'url(https://source.unsplash.com/6k2wkqGMw1I/1500x1500)';
-    filter: grayscale(0.8);
-    // filter: sepia(0.2);
   }
   .panel1 {
     background-image: 'url(https://source.unsplash.com/13g9FZqVvNY/1500x1500)';
-    filter: grayscale(0.8);
-    // filter: sepia(0.2);
   }
   .panel2 {
     background-image: 'url(https://source.unsplash.com/uNyF_FXn4qw/1500x1500)';
-    filter: grayscale(0.8);
-    // filter: sepia(0.2);
   }
   .panel3 {
     background-image: 'url(https://source.unsplash.com/Xf071ws2Icg/1500x1500)';
-    filter: grayscale(0.8);
-    // filter: sepia(0.2);
   }
   .panel4 {
     background-image: 'url(https://source.unsplash.com/161u7xxBRI4/1500x1500)';
-    filter: grayscale(0.8);
-    // filter: sepia(0.2);
   }
   .panel5 {
     background-image: 'url(https://source.unsplash.com/3cIPFNW3wog/1500x1500)';
-    filter: grayscale(0.8);
-    // filter: sepia(0.2);
   }
   .panel6 {
     background-image: 'url(https://source.unsplash.com/KJ241ZAOYwU/1500x1500)';
-    filter: grayscale(0.8);
-    // filter: sepia(0.2);
   }
   .panel7 {
     background-image: 'url(https://source.unsplash.com/Ljz_Wmk7t7g/1500x1500)';
-    filter: grayscale(0.8);
-    // filter: sepia(0.2);
   }
 
     /* unsplash:
@@ -223,9 +198,9 @@
     */
 
 
-.panel[data-active] {
-  z-index: 20;
-  pointer-events: auto;
+// .panel[data-active] {
+  // z-index: 20;
+  // pointer-events: auto;
 
   // .panelContainer {
   //   --x: calc(var(--px) - 0.5);
@@ -240,10 +215,4 @@
   //       rotateY(calc(var(--x) * 30deg));
   //   }
   // }
-}
-
-
-.panel.active {
-  flex: 8;
-  font-size: 40px;
-}
+// }

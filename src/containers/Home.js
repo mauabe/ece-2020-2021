@@ -94,17 +94,14 @@ function Panel({ panel, offset }) {
             backgroundImage: `url(${panel.image})`
           }}
         >
-          <p className="panelTitle">{panel.title}</p>
-          <p className="panelName">{panel.name}</p>
-          <p className="panelText">{panel.text}</p>
+          <p className="panelTitle">
+            <p>{panel.title}</p>
+            <p className="panelName">{panel.name}</p>
+            <p className="panelText">{panel.text}</p>
+
+          </p>
           <Link to={`/news/${panel.link}`} >
-            <div className="panelLinkButton">
-              <span>more
-                <span className="panelLinkElipsis">
-                  <span>.</span><span>.</span><span>.</span>
-                </span>
-              </span>
-            </div>
+            <div className="panelLinkButton">more > > > </div>
           </Link>
       </div>
     </div>
