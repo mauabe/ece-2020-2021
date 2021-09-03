@@ -15,128 +15,115 @@
 // classes in use: content-area > panelsContainer > panel > panel${id} > panelContent > panelTitle, panelName, panelText, panelLinkButton
 
 .panelsContainer {
+  display: flex;
   flex: 1 1 100%;
-  // min-height: 100vh;
-  min-height: 80vh;
+  min-height: 85vh;
   overflow: hidden;
   flex-direction: row;
   flex-wrap: no-wrap;
-  display: flex;
-  // z-index: 20;
-
     // transform-style: preserve-3d;
     // transform: perspective(1000px) translateX(calc(100% * var(--offset)))
     //   rotateY(calc(-45deg * var(--dir)));
 
   .panel{
-    margin: 0;
-    width: 100%;
-    flex: 1 1 100%;
     display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    margin: 0;
+    max-width: 12.5%;
+    min-width: 11%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
     filter: grayscale(0.8);
+    position: relative;
+    // align-items: flex-start;
+    // justify-content: center;
+    transition:
+      min-width 0.3s ease-in-out 0.3s,
+      opacity 0.3s ease-in-out 0.3s,
+      filter 0.3s ease-in-out 0.3s;
+      // font-size 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1),
+      // flex 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1);
 
     .panelContent {
       display: flex;
       flex-direction: column;
-      flex: 1 0 100%;
-      width: 100%;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      color: white;
-      align-items: flex-start;
-      justify-content: center;
+      flex: 1 1 100%;
       font-family:'Quattrocento Sans', sans-serif;
-      transition:
-        opacity 0.5s ease-in-out 0.5s;
-      // font-size 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1),
-      // flex 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1);
-      // justify-content: space-evenly;
-      // margin: 0;
+      font-size: 1.1rem;
+      top: 45%;
+      position: absolute;
+      margin: 0 0.5rem;
+      align-items: flex-start;
+      justify-items: center;
 
       .panelTitle {
         display: flex;
         flex: 1 1 100%;
-        flex-direction: column;
         font-family:'Quattrocento Sans', sans-serif;
-        font-size: 1.3rem;
-        font-weight: normal;
-        letter-spacing: 0.5ch;
-        margin: 0 1rem ;
+        font-size: 1.1rem;
+        letter-spacing: 0.2ch;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.72);
-        top: 40%;
-        position: relative;
-        .panelName {
-          top: 50%;
-          font-family:'Grand Hotel', cursive;
-          font-size: 2.4em;
-          font-weight: 700;
-          margin: 0 1rem;
-          &:hover{
-            color: $mercury;
-          }
-        }
-        .panelText {
-          font-family:'Quattrocento Sans', sans-serif;
-          font-size: 1.3rem;
-          font-weight: normal;
-          letter-spacing: 0.2ch;
-          opacity: 0.01;
-          margin: 0 1rem;
-          padding: 1em 0;
-          // position: absolute;
-          // align-self: flex-start;
-          // top: 65%;
-          // bottom: 25%;
-
-        }
+        margin: 0;
       }
-
-
-      .panelLinkButton{
-        bottom: 5%;
-        font-family:'Quattrocento Sans', sans-serif;
+      .panelName {
+        display: flex;
+        flex: 1 1 100%;
+        // top: 50%;
+        font-family:'Grand Hotel', cursive;
+        font-size: 2rem;
         font-weight: 700;
-        font-size: 1rem;
-        width: 5rem;
-        height: 1.5rem;
-        opacity: 0;
-        position: absolute;
-        transition: opacity 0.35s ease-in-out 0.2s;
-        background-color: orange;
-        align-self: flex-end;
-        justify-content: center;
-        margin: 0 1rem;
-        padding: 0 1rem;
-
-        /*.panelLinkElipsis{
-          transition: opacity 0.2s ease-in-out 0.2s;
-          opacity: 1;
-        }*/
-
+        &:hover{
+          color: $mercury;
+        }
+        margin: 0.2rem 0;
       }
+      .panelText {
+        display: flex;
+        font-family:'Quattrocento Sans', sans-serif;
+        font-size: 1.1rem;
+        opacity: 0;
+        margin: 0.7rem 0;
+      }
+
     } //end panelContent
 
+    .panelLinkButton{
+      display: flex;
+      bottom: 20%;
+      font-family:'Quattrocento Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      width: 5rem;
+      height: 1.5rem;
+      opacity: 0;
+      background-color: orange;
+      position: absolute;
+      margin: 0 1rem;
+      padding: 0.5rem;
+    }
     // .panel.active {
     //   flex: 5;
     //   font-size: 40px;
     // }
 
     &:hover{
+      // transition: min-width 0.5s ease-in-out 0.5s;
       filter: grayscale(0.1);
+      min-width: 14%;
       // flex: 5;
 
-      // .panelTitle,
-      // .panelText,
-      // .panelLinkButton{
+      // .panelTitle {
       //   opacity: 1;
       // }
       .panelText{
-        transition: opacity 0.1s ease-in-out 0.3s;
+        transition: opacity 0.3s ease-in-out 0.3s;
         opacity: 1;
       }
-      .panelLinkButton, .panelText{
-        transition: opacity 0.7s ease-in-out 0.4s;
+      .panelLinkButton {
+        transition: opacity 1.7s ease-in-out 0.3s;
         opacity: 1;
       }
 
@@ -154,48 +141,32 @@
 } //end panelsContainer
 
 
-  .panel0 {
-    background-image: 'url(https://source.unsplash.com/6k2wkqGMw1I/1500x1500)';
-  }
-  .panel1 {
-    background-image: 'url(https://source.unsplash.com/13g9FZqVvNY/1500x1500)';
-  }
-  .panel2 {
-    background-image: 'url(https://source.unsplash.com/uNyF_FXn4qw/1500x1500)';
-  }
-  .panel3 {
-    background-image: 'url(https://source.unsplash.com/Xf071ws2Icg/1500x1500)';
-  }
-  .panel4 {
-    background-image: 'url(https://source.unsplash.com/161u7xxBRI4/1500x1500)';
-  }
-  .panel5 {
-    background-image: 'url(https://source.unsplash.com/3cIPFNW3wog/1500x1500)';
-  }
-  .panel6 {
-    background-image: 'url(https://source.unsplash.com/KJ241ZAOYwU/1500x1500)';
-  }
-  .panel7 {
-    background-image: 'url(https://source.unsplash.com/Ljz_Wmk7t7g/1500x1500)';
-  }
+  // .panel0 {
+  //   background-image: 'url(https://source.unsplash.com/6k2wkqGMw1I/1500x1500)';
+  // }
+  // .panel1 {
+  //   background-image: 'url(https://source.unsplash.com/13g9FZqVvNY/1500x1500)';
+  // }
+  // .panel2 {
+  //   background-image: 'url(https://source.unsplash.com/uNyF_FXn4qw/1500x1500)';
+  // }
+  // .panel3 {
+  //   background-image: 'url(https://source.unsplash.com/Xf071ws2Icg/1500x1500)';
+  // }
+  // .panel4 {
+  //   background-image: 'url(https://source.unsplash.com/wFW4zlulBT8/1500x1500)';
+  // }
+  // .panel5 {
+  //   background-image: 'url(https://source.unsplash.com/3cIPFNW3wog/1500x1500)';
+  // }
+  // .panel6 {
+  //   background-image: 'url(https://source.unsplash.com/KJ241ZAOYwU/1500x1500)';
+  // }
+  // .panel7 {
+  //   background-image: 'url(https://source.unsplash.com/Ljz_Wmk7t7g/1500x1500)';
+  // }
 
-    /* unsplash:
-    girl in sound booth: X-etICbUKec
-    light cube: KJ241ZAOYwU
-    bubble: 6k2wkqGMw1I
-    phone and pen: SgmhqvhBIKg
-    solar panel: HCha-UHkIg8
-    iwatch: uNyF_FXn4qw
-    Toyota concept car: 161u7xxBRI4
-    student lab: fr5h_07OrPI
-    engineer laptop: Hjez0AY_c4k
-    propulsion i_14EbINjKY
-    sound studio: wFW4zlulBT8
-    radar antenna: 3cIPFNW3wog
-    arm cast: 13g9FZqVvNY
-    Kenedy Space Ctr: Ljz_Wmk7t7g
-    chip: Xf071ws2Icg
-    */
+
 
 
 // .panel[data-active] {
