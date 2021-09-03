@@ -70,7 +70,7 @@ export const panels = [
     name: "Wang",
     text: "Received NSF Grant to Improve Quantum Computing Chips",
     linkCopy: "more",
-    image: "https://source.unsplash.com/161u7xxBRI4/1500x1500",
+    image: "https://source.unsplash.com/KJ241ZAOYwU/1500x1500",
     link: "news5"
   },
   {
@@ -88,7 +88,7 @@ export const panels = [
     name: "Tang",
     text: "Recognized as 2021 Outstanding Young Engineer by IEEE MTT-S",
     linkCopy: "more...",
-    image: "https://source.unsplash.com/KJ241ZAOYwU/1500x1500",
+    image: "https://source.unsplash.com/Hjez0AY_c4k/1500x1500",
     link: "news7"
   },
   {
@@ -102,47 +102,21 @@ export const panels = [
   },
 
 ];
-// export const slides = [
-//   {
-//     title: "From the  Chair",
-//     subtitle: "Covid-19 Pandemic Changes Everything",
-//     description: "The school year began like any other year but ended with a pandemic that has not been seen for a hundred years... and is still raging.",
-//     image: "/img/covid-virus.jpg",
-//     link: "news1"
-//   },
-//   {
-//     title: "Prof. Jarrahi and Dr. Yardimci receive the",
-//     subtitle: "Innovation in Regulatory Science Award",
-//     description: "The Burroughs Wellcome Fund recognize UCLA ECE faculty for their innovative terahertz technology facilitating regulatory decisions on agricultural food products.",
-//     image: "/img/agribusiness.jpg",
-//     link: "highlights1"
-//   },
-//   {
-//     title: "Professor Warren Mori receives",
-//     subtitle: "James Maxwell Award",
-//     description: "He is the third ECE faculty member honored with the prestigious award. The two prior winners are Professors Chand Joshi and Francis Chen.",
-//     image: "/img/plasma-physics.jpg",
-//     link: "highlight2"
-//   },
-//   {
-//     title: "Dean Jayathi Murthy Elected to ",
-//     subtitle: "National Academy of Engineering",
-//     description: 'For the development of unstructured solution-adaptive finite volume methods for heat, mass and momentum transport.',
-//     image: "/img/dean-murthy-faculty.jpg",
-//     link: "news3"
-//   },
-//   {
-//     title: "Emeritus Professor William Kaiser was elected to the",
-//     subtitle: "AIMBE College of Fellows",
-//     description: 'For seminal contributions to development and commercialization of networked biomedical sensors and analytics enabling the field of wireless health monitoring.',
-//     image:"/img/covid-lab.jpg",
-//     link: "highlight2"
-//   },
-//   {
-//     title: "Alumni Reza Rofougaran was elected to the",
-//     subtitle: "National Academy of Engineering",
-//     description: 'Reza Rofougaran graduated from UCLA (1986, M.S. 1988, Ph.D. 1998), studying under Professor Asad Abidi. He was elected to the NAE for the development of radio system-on-a-chip technology for wireless networking. ',
-//     image:"/img/microchips.jpg",
-//     link: "news4"
-//   }
-// ];
+
+    /* unsplash:
+    girl in sound booth: X-etICbUKec
+    light cube: KJ241ZAOYwU
+    bubble: 6k2wkqGMw1I
+    phone and pen: SgmhqvhBIKg
+    solar panel: HCha-UHkIg8
+    iwatch: uNyF_FXn4qw
+    Toyota concept car: 161u7xxBRI4
+    student lab: fr5h_07OrPI
+    engineer laptop: Hjez0AY_c4k
+    propulsion i_14EbINjKY
+    sound studio: wFW4zlulBT8
+    radar antenna: 3cIPFNW3wog
+    arm cast: 13g9FZqVvNY
+    Kenedy Space Ctr: Ljz_Wmk7t7g
+    chip: Xf071ws2Icg
+    */

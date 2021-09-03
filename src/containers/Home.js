@@ -79,31 +79,24 @@ function Panel({ panel, offset }) {
 
   return (
     <div
-      className="panel"
+      className={`panel panel${panel.id}`}
       ref={ref}
       data-active={active}
       style={{
+        backgroundImage: `url(${panel.image})`,
         "--offset": offset,
         "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
       }}
     >
       <BrowserRouter basename="/2020-2021"/>
-        <div
-          className={`panelContent panel${panel.id}`}
-          style={{
-            backgroundImage: `url(${panel.image})`
-          }}
-        >
-          <p className="panelTitle">
-            <p>{panel.title}</p>
-            <p className="panelName">{panel.name}</p>
-            <p className="panelText">{panel.text}</p>
-
-          </p>
+        <div className="panelContent">
+          <p className="panelTitle">{panel.title}</p>
+          <p className="panelName">{panel.name}</p>
+          <p className="panelText">{panel.text}</p>
+      </div>
           <Link to={`/news/${panel.link}`} >
             <div className="panelLinkButton">more > > > </div>
           </Link>
-      </div>
     </div>
   );
 }
