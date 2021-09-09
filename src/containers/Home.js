@@ -44,9 +44,6 @@ function usePanel(active) {
     };
   }, [active]);
   console.log('React useEffect return ref::', ref)
-  console.log('React useEffect return ref::', ref)
-  console.log('React useEffect return ref::', ref)
-  console.log('React useEffect return ref::', ref)
 
   return ref;
 }
@@ -88,7 +85,7 @@ function Panel({ panel, offset }) {
         "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
       }}
     >
-      <BrowserRouter basename="/2020-2021"/>
+      <BrowserRouter basename="/2020-2021/temp"/>
         <div className="panelContent">
           <p className="panelTitle">{panel.title}</p>
           <p className="panelName">{panel.name}</p>
@@ -105,7 +102,6 @@ function Panel({ panel, offset }) {
 
 function Home() {
   const [state, dispatch] = React.useReducer(panelReducer, initialState);
-  console.table(data.panels)
   console.log('home state', state)
 
   return(

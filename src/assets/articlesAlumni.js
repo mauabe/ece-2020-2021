@@ -138,7 +138,7 @@ export const articlesAlumni = [
   },
   {
     articleId: 'annualreport',
-    professorTitle: '2020-2021 ',
+    professorTitle: ' ',
     professorFirstName: '',
     professorLastName: '',
     professorName: ' ',

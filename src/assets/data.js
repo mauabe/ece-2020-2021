@@ -68,7 +68,7 @@ export const panels = [
     id: "4",
     title: "Professor Kang",
     name: "Wang",
-    text: "Received NSF Grant to Improve Quantum Computing Chips",
+    text: "Received NSF Grant  to Improve Quantum Computing Chips",
     linkCopy: "more",
     image: "https://source.unsplash.com/KJ241ZAOYwU/1500x1500",
     link: "news5"

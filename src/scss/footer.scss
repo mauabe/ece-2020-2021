@@ -5,7 +5,7 @@
 
 .site-footer{
   display: flex;
-  background-color:$LightSlateGray;
+  background-color:$darkblue;
   opacity: 0.9;
   height: 45px;
   width: 100%;
@@ -14,22 +14,25 @@
   justify-content: space-between;
   align-items: center;
   flex: 0 1 100%;
-        z-index: 10;
+        z-index: 20;
 
-    .footer-logo{
-      align-self: center;
-      padding-left: 3em;
-      padding-top: 0.4em;
-      width: 180px;
-      height: auto;
+  .footer-logo{
+    display: flex;
+    align-self: center;
+    // padding-top: 0.3em;
+    padding-left: 3em;
+    img {
+      max-width: 170px;
+      height:auto;
+      object-fit:cover;
     }
+  }
 
-    .footer-dept{
-      padding-right: 5em;
-      padding-left: 2em;
-      font-size: .9rem;
-      line-height: 1.2rem;
-      color: $black-20;
-      // opacity: 0.8;
-    }
+  .footer-dept{
+    padding-right: 5em;
+    padding-left: 2em;
+    font-size: .9rem;
+    line-height: 1.2rem;
+    color: $greydark;
+  }
 }

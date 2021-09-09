@@ -31,22 +31,26 @@
 
     a, li.menu-item{
       // justify-self: flex-end;
-      color: $black-60;
+      color: $menublue;
       padding-left: 1.2em;
       padding-bottom: 0.3em;
-      font-weight: 500;
+      font-weight: 700;
       font-family: Oswald;
       font-size: 1em;
-      opacity: 0.85;
+      opacity: 0.75;
       cursor: pointer;
-      -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.2));
-      filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.2));
+      // -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.2));
+      // filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.2));
       background-color: transparent;
 
-      &:hover,
-      &:active{
+      &:hover{
         opacity: 1;
         color: $black-80;
+        transform: all .8s ease-out;
+      }
+      &:active{
+        opacity: 1;
+        color: $princess;
         transform: all .8s ease-out;
       }
     }
