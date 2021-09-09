@@ -75,11 +75,11 @@
     // }
 
     &.active {
-      color: $orange;
+      color: $princess;
       transition: all .4s ease-in-out;
 
       .bubble-frame{
-        border: 2px solid $orange;
+        border: 2px solid $princess;
         box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
         filter: grayscale(0.1);
       }
@@ -87,11 +87,11 @@
 
     &.bubble-link:focus,
     &.bubble-link:hover  {
-      color: $orange;
+      color: $princess;
       transition: all .4s ease-in-out;
 
       .bubble-frame{
-        border: 2px solid $orange;
+        border: 2px solid $princess;
         box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
         filter: brightness(0.8);
         filter: grayscale(0.4);
@@ -99,7 +99,7 @@
       .bubble-profTitle,
       .bubble-profName,
       .bubble-headline {
-        color: $orange;
+        color: $princess;
       }
     }
 

@@ -52,7 +52,7 @@
         object-fit: cover;
         z-index: 10;
         margin-right: 4em;
-        border: 2px solid $orange;
+        border: 2px solid $princess;
         transition: all 0.3s ease-in-out;
         &:hover{
           // object-position: 1% 1%;
@@ -76,7 +76,7 @@
           font-weight: 700;
           color: $black-60;
           font-size: 2.8em;
-          color: $orange;
+          color: $princess;
         }
         .subhead{
           font-family: 'Oswald', sans-serif;
