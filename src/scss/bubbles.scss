@@ -2,19 +2,19 @@
 @import "./variables.scss";
 // @import './patterns';
 
-.content-area{
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 100%;
+// .content-area{
+//   display: flex;
+//   flex-direction: column;
+//   flex: 1 1 100%;
 
-  .page{
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 100%;
-    // -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
-    // filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
-  }
-}
+//   .page{
+//     display: flex;
+//     flex-direction: column;
+//     flex: 0 0 100%;
+//     // -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
+//     // filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
+//   }
+// }
 
 .bubbles{
   display: flex;
@@ -22,9 +22,11 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: flex-start;
-  margin: 0.5em 12% 0.5em 12%;
-  background: $beige-light--3;
-  border-radius: 20px;
+  margin: 0.5em 12% 0 12%;
+  background: $beige-light--50;
+  background-image:  url("../assets/images/overlay.png");
+  border-bottom: 3px dotted $menublue--50;
+  // filter: drop-shadow(0 8px 5px rgba(0,0,0,0.4));
   transition: all .4s ease-in-out;
 
   .bubble-link {
@@ -35,16 +37,16 @@
     transition: all .2s ease-in-out;
     text-align: center;
     justify-content: center;
-    // flex-wrap: nowrap;
-    // flex-wrap: wrap;
+    transition: all .4s ease-in-out;
 
       .bubble-frame{
         position: relative;
         width: 4em;
         height: 4em;
         overflow: hidden;
+        background-color: $mercury;
         border: 2px solid $black-40;
-        border-radius: 5px;
+        border-radius: 2px;
         filter: grayscale(0.8);
         margin: 10px auto;
 
@@ -75,33 +77,32 @@
     // }
 
     &.active {
-      color: $princess;
       transition: all .4s ease-in-out;
+      color: $princess;
 
       .bubble-frame{
         border: 2px solid $princess;
-        box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
         filter: grayscale(0.1);
       }
     }
 
     &.bubble-link:focus,
     &.bubble-link:hover  {
-      color: $princess;
+      color: $menublue;
       transition: all .4s ease-in-out;
 
       .bubble-frame{
-        border: 2px solid $princess;
-        box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
-        filter: brightness(0.8);
+        border: 2px solid $menublue--70;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
         filter: grayscale(0.4);
+        filter: brightness(0.8);
       }
       .bubble-profTitle,
       .bubble-profName,
       .bubble-headline {
-        color: $princess;
+        color: $menublue;
       }
     }
-
   }
 }

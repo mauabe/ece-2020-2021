@@ -6,9 +6,11 @@ $darkblue: #282c34;
 
 //used colors for ECE
 $princess: #d07316;
-$menublue: #24343f;
+$menublue: rgba(17, 60, 111, 1);
+$menublue--30: rgba(17, 60, 111, .3);
 $menublue--50: rgba(17, 60, 111, .5);
 $menublue--70: rgba(17, 60, 111, .7);
+$menublue--85: rgba(17, 60, 111, .85);
 $amazon: #0d4773;
 $borderblue: rgba(116, 141, 181, 1.00);
 $borderblue2: #abcbd1;
@@ -51,14 +53,14 @@ $WhiteSmoke: #f5f5f5;
 $SlateGray: #778899;
 
 // beige with transparency
-$beige-light--1: rgba(208, 209, 205, .1);
-$beige-light--3: rgba(208, 209, 205, .3);
-$beige-light--5: rgba(208, 209, 205, .5);
-$beige-light: rgba(208, 209, 205, .5);
+$beige-light--10: rgba(208, 209, 205, .1);
+$beige-light--30: rgba(208, 209, 205, .3);
+$beige-light--50: rgba(208, 209, 205, .5);
+$beige-lighter--40: rgba(239, 240, 235, .4);
+$beige-lighter--60: rgba(239, 240, 235, .6);
+$beige-lighter--80: rgba(239, 240, 235, .8);
+
 $grey-lighter--10:	rgba(	219, 219, 219, .1);
 $grey-lighter--30:	rgba(	219, 219, 219, .3);
 $grey-lighter--50:	rgba(	219, 219, 219, .5);
-$beige-lighter: rgba(239, 240, 235, .6);
-$beige-light--60: rgba(239, 240, 235, .6);
-$beige-light--70: rgba(239, 240, 235, .7);
 $grey-lighter--80:	rgba(	219, 219, 219, .8);
