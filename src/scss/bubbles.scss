@@ -23,10 +23,9 @@
   justify-content: space-evenly;
   align-content: flex-start;
   margin: 0.5em 12% 0 12%;
-  background: $beige-light--50;
+  background: $newivy--60;
   background-image:  url("../assets/images/overlay.png");
-  border-bottom: 3px dotted $menublue--50;
-  // filter: drop-shadow(0 8px 5px rgba(0,0,0,0.4));
+  border-bottom: 4px dashed $newivy;
   transition: all .4s ease-in-out;
 
   .bubble-link {
@@ -44,8 +43,8 @@
         width: 4em;
         height: 4em;
         overflow: hidden;
-        background-color: $mercury;
-        border: 2px solid $black-40;
+        background-color: $white;
+        border: 1px solid $ivy;
         border-radius: 2px;
         filter: grayscale(0.8);
         margin: 10px auto;
@@ -78,30 +77,33 @@
 
     &.active {
       transition: all .4s ease-in-out;
-      color: $princess;
+      color: $berry-menu;
 
       .bubble-frame{
-        border: 2px solid $princess;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        transition: all .4s ease-in-out;
+        border: 1px solid $berry;
+        box-shadow: 0 3px 3px rgba(0,0,0,0.2);
         filter: grayscale(0.1);
       }
     }
 
     &.bubble-link:focus,
     &.bubble-link:hover  {
-      color: $menublue;
       transition: all .4s ease-in-out;
+      color: $berry;
 
       .bubble-frame{
-        border: 2px solid $menublue--70;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        transition: all .4s ease-in-out;
+        border: 1px solid $berry;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.2);
         filter: grayscale(0.4);
         filter: brightness(0.8);
       }
       .bubble-profTitle,
       .bubble-profName,
       .bubble-headline {
-        color: $menublue;
+        transition: all .4s ease-in-out;
+        color: $berry;
       }
     }
   }

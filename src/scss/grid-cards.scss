@@ -12,7 +12,7 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 2.2em;
-    color: $jaguar;
+    color: $newivy;
     text-indent: 0;
     margin: 0.5em 0 0.5em 0;
     background: transparent;
@@ -39,15 +39,15 @@
       min-width: 320px;
       min-height: 300px;
       border-radius: 4px;
-      background: $grey-lighter--30;
+      background: $sweetleaf--30;
       align-items: start;
       padding: 1.2em;
       max-width: 100%;
 
       .frame{
         justify-self: center;
-        border-radius: 5px;
-        border: 1px solid $black-40;
+        border-radius: 2px;
+        border: 1px solid $ivy;
         align-items: center;
         width: 150px;
         height: 190px;
@@ -103,8 +103,8 @@
       transition: all 0.3s ease-in-out;
       min-width: 320px;
       min-height: 200px;
-      border-radius: 4px;
-      background: $grey-lighter--30;
+      border-radius: 2px;
+      background: $sweetleaf--30;
       align-items: center;
       padding: 1em;
 
@@ -154,7 +154,7 @@
         .card-name{
           font-family: 'Lemon', sans-serif;
           font-size: 1.2em;
-          color: $amazon;
+          color: $newivy;
           text-align: center;
           margin-bottom: 0.5em;
           line-height: 2.8;
@@ -167,8 +167,8 @@
     display: block;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: all 0.3s ease-in-out;
-    border-radius: 4px;
-    background: $grey-lighter--30;
+    border-radius: 2px;
+    background: $sweetleaf--30;
     justify-content: center;
     text-align: center;
     padding: 1em;
@@ -178,43 +178,45 @@
   }
 
   .card-name{
-    font-family: 'Lemon', serif;
+    font-family: 'Grand Hotel', serif;
     font-weight: 700;
     font-size: 1.5em;
-    color: $amazon;
+    color: $newivy;
     text-justify: center;
     margin-bottom: 0.5em;
     line-height: 2.8;
   }
 
   .prof-name{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
-    color: $black-70;
+    font-size: 1.4em;
+    color: $ivy;
     text-align: center;
     margin-bottom: 0.5em;
   }
   .prof-title{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 1.1em;
+    font-family: 'Libre Caslon Text', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1em;
     color: $black-40;
     text-align: center;
     margin: 1em 0;
   }
 
   span.prof-title.dept{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500  ;
+    font-family: 'Libre Caslon Text', serif;
+    font-style: italic;
+    font-weight: 400;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     color: $black-40;
     text-align: center;
     padding-bottom: 0.8em;
   }
   .prof-name.dept{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Libre Caslon Text', serif;
     font-weight: 700;
     font-size: 1.3em;
     color: $black-60;
@@ -243,7 +245,7 @@
 
   .frame-book{
     margin: 1em auto;
-    border: 2px solid $black-70;
+    border: 1px solid $ivy;
     align-items: center;
     width: 150px;
     height: 190px;
@@ -256,8 +258,8 @@
     position: relative;
     display: none;
     transition: all 5.3s ease-in-out;
-    border: 2px solid $black-60;
-    border-radius:  5px;
+    border: 1px solid $ivy;
+    border-radius:  2px;
 
     overflow: hidden;
     z-index: 100;
@@ -289,9 +291,9 @@
   // }
 
   div.card-name{
-    font-family: 'Lemon', sans-serif;
+    font-family: 'Grand Hotel', sans-serif;
     font-size: 1.5em;
-    color: $amazon;
+    color: $newivy;
     text-justify: center;
     margin-bottom: 0.5em;
   }

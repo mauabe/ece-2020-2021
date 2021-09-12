@@ -11,8 +11,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0 12% 2em 12%;
-  // border-radius: 20px 20px 0 0;
-  background: $beige-lighter--60;
+  background: $sweetleaf--30;
   background-image:  url("../assets/images/overlay.png");
 
   // justify-content: flex-start;
@@ -23,7 +22,6 @@
     width: 100%;
 
     img.article-main-photo {
-      // border-radius: 20px 20px 0 0;
       position: relative;
       top: 0;
       height: 180px;
@@ -43,45 +41,44 @@
 
       img.author{
         overflow: hidden;
-        border-radius: 4px;
+        border-radius: 3px;
         filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.2));
         width: 9em;
         height: 9em;
         object-fit: cover;
         z-index: 10;
         margin-right: 4em;
-        border: 2px solid $menublue--85;
-        background-color: $mercury;
+        border: 1px solid $ivy;
+        background-color: $white;
         transition: all 0.3s ease-in-out;
         &:hover{
           // object-position: 1% 1%;
-          filter: drop-shadow(12px 12px 12px rgba(0,0,0,0.3));
+          filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.3));
         }
       }
 
       .article-headline{
         position: relative;
         margin: 0 0 4em 0;
+        color: $peacock;
 
         .article-professor-title, .article-professor-name {
-          // font-family: 'Lemon', cursive;
           font-family: 'Oswald', sans-serif;
           font-weight: 300;
           font-size: 1.3em;
-          color: $black-60;
+          color: $peacock--80;
         }
         .headline{
-          font-family: 'Oswald', sans-serif;
+          font-family: 'Quattrocento Sans', sans-serif;
           font-weight: 700;
-          color: $black-60;
           font-size: 2.8em;
-          color: $menublue--70;
+          color: $peacock;
         }
         .subhead{
           font-family: 'Oswald', sans-serif;
           font-weight: 500;
           font-size: 1.8em;
-          color: $black-60;
+          color: $peacock--80;
         }
       }
     }
@@ -109,12 +106,12 @@
         color: $black-95;
       }
       span.first-letter{
-        font-family: 'Lemon', cursive, "Times", "Times New Roman";
+        font-family: 'Grand Hotel', cursive, "Times", "Times New Roman";
         // initial-letter: 3 2;
         font-size: 2.5em;
         float: left;
         margin: -0.2em .4em 0 0;
-        color: $SlateGray;
+        color: $newivy;
         text-indent: 0;
       }
     }
@@ -167,20 +164,21 @@
   padding: 0em ;
   display: none;
 }
-// .credits{
-//   margin: 1em;
+.credits{
+  margin: 1em;
 
-//   .image-credits{
-//     font-family: 'Libre Caslon Text', sans-serif;
-//     font-weight: 300;
-//     font-size: .7em;
-//   }
-//   .author-credits{
-//     font-family: 'Libre Caslon Text', sans-serif;
-//     font-weight: 300;
-//     font-size: .7em;
-//   }
-// }
+  .image-credits{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: .8 mio4
+    em;
+  }
+  .author-credits{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: .8em;
+  }
+}
 
 .picture-area.none{
   display: none;
@@ -197,11 +195,11 @@ img.none {
   font-weight: 400i;
   font-size: 0.9em;
   font-style: italic;
-  color: $jaguar;
+  color: $juniper;
   transition: all .3s ease-in-out;
 
   &:hover{
-    color: $beige-lighter--80;
+    color: $newivy;
   }
 }
 
@@ -256,10 +254,8 @@ img.none {
     // margin-right: 50%;
   }
   .author{
-    // justify-self: center;
     margin-top: 2em;
     margin-bottom: 1em;
-    // text-align: center;
     left: 50%;
     right: 50%;
   }

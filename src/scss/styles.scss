@@ -78,10 +78,12 @@ a{
   height: 100%;
   align-items: center;
   justify-content: center;
+  // background-color:red;
   background-color: $background;
-  color: $LightSlateGray;
+  color: $peacock;
+  // color: blue;
   // background-image:  url("../assets/images/overlay.png"), url("../assets/images/qbkls.png");
-  background-image: url("../assets/images/qbkls.png");
+  background-image: url("../assets/images/qbkl.png");
   background-position: top left, center center;
   background-attachment: fixed, fixed;
   background-size: auto, auto;

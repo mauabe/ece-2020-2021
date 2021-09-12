@@ -21,7 +21,7 @@
   }
 
   h2 {
-    font-family: 'Lemon', cursive;
+    font-family: 'Grand Hotel', cursive;
     font-size: 1em;
     color: $borderblue;
     font-size:2.5em;
@@ -34,7 +34,7 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 2.2em;
-    color: $jaguar;
+    color: $newivy;
     text-indent: 0;
     margin: 0.5em 0 0.5em 0;
     background: transparent;
@@ -47,7 +47,6 @@
     text-align: justify;
     text-justify: inter-word;
     text-indent: 0;
-    // text-indent: 0;
   }
 
   .page-award{
@@ -82,16 +81,13 @@
     margin-bottom: 1.5em;
     text-indent: 0;
     text-align: left;
+    color: $newivy;
   }
 
   .page-img{
     grid-template-columns: 1fr;
     text-indent: 0;
     overflow: hidden;
-    // justify-content: start;
-    // height: 500px;
-    // min-width: 125px;
-    // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
     img{
       width: 450px;
@@ -149,11 +145,11 @@
       overflow: hidden;
       margin-bottom: 0.4em;
       transition: all 0.3s;
-      border-radius: 5px;
-      border: 1px solid  $jaguar;
+      border-radius: 2px;
+      border: 1px solid  $newivy;
     }
     img.fac:hover{
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+      box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
     }
   }
 
@@ -184,7 +180,7 @@
         transition: all 0.3s ease-in-out;
         width: 250px;
         height: 250px;
-        border-radius: 5px;
+        border-radius: 2px;
         object-fit: cover;
         object-position: 50% 50%;
         margin: 0 3em 1em 0;
@@ -229,6 +225,7 @@
   }
   .faculty-caption{
     margin-bottom: 2em;
+    color: $newivy;
   }
 
   // .twocolumns{
