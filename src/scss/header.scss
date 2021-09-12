@@ -23,33 +23,34 @@
     display: flex;
     justify-content: flex-end;
     flex: 1 1 100%;
-    background: transparent;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 13% 1em 13%;
     height: 44px;
+    background: transparent;
 
     a, li.menu-item{
       // justify-self: flex-end;
-      color: $menublue;
+      color: $newivy;
       padding-left: 1.2em;
       padding-bottom: 0.3em;
       font-weight: 700;
       font-family: Oswald;
       font-size: 1em;
-      opacity: 0.75;
+      opacity: 1;
       cursor: pointer;
-      background-color: transparent;
+      transform: all .4s ease-out;
+      // background-color: transparent;
 
       &:hover{
-        opacity: 1;
-        color: $black-80;
-        transform: all .8s ease-out;
+        // opacity: .9;
+        color: $berry-menu--90;
+        transform: all .4s ease-out;
       }
       &:active{
-        opacity: 1;
-        color: $princess;
-        transform: all .8s ease-out;
+        // opacity: .8;
+        color: $berry;
+        // transform: all .4s ease-out;
       }
     }
 

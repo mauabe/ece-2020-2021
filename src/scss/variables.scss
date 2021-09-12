@@ -3,21 +3,53 @@ $values: 0 0 100px;
 $color-default: #F0F3F2;
 $badass: #BADA55;
 $darkblue: #282c34;
+$white: white;
+$black: black;
 
 //used colors for ECE
+// $sweetleaf: #b1c7a3;
+$sweetleaf: #ABBDB4;
+$sweetleaf--30: rgba(171,189,180, .3);
+$sweetleaf--50: rgba(171,189,180, .5);
+$sweetleaf--70: rgba(171,189,180, .7);
+$juniper: #6f9081;
+$juniper--30: rgba(111, 144, 129, .3);
+$juniper--50: rgba(111, 144, 129, .5);
+$juniper--70: rgba(111, 144, 129, .7);
+$ivy: #4e5b4a;
+$newivy: #4e5b4a;
+$newivy--30: rgba(78, 91, 74, .3);
+$newivy--50: rgba(78, 91, 74, .5);
+$newivy--60: rgba(78, 91, 74, .6);
+$newivy--70: rgba(78, 91, 74, .7);
 $princess: #d07316;
-$menublue: rgba(17, 60, 111, 1);
-$menublue--30: rgba(17, 60, 111, .3);
-$menublue--50: rgba(17, 60, 111, .5);
-$menublue--70: rgba(17, 60, 111, .7);
-$menublue--85: rgba(17, 60, 111, .85);
-$amazon: #0d4773;
+$peacock: #364d4b;
+$peacock--30: rgba(54, 77, 75, .3);
+$peacock--50: rgba(54, 77, 75, .5);
+$peacock--80: rgba(54, 77, 75, .8);
+$peacock--100: rgba(54, 77, 75, 1);
+$berry: rgb(134, 41, 97);
+$berry-menu: rgba(24,100,64, 1);
+$berry-menu--30: rgba(24,100,64, .3);
+$berry-menu--50: rgba(24,100,64,  .5);
+$berry-menu--70: rgba(24,100,64,  .7);
+$berry-menu--90: rgba(24,100,64,  .86);
+
+
+
+$menublue: rgb(17, 170, 161);
+$menublue--30: rgba(17, 170, 161, .3);
+$menublue--50: rgba(17, 170, 161, .5);
+$menublue--70: rgba(17, 170, 161, .7);
+$menublue--85: rgba(17, 170, 161, .85);
 $borderblue: rgba(116, 141, 181, 1.00);
-$borderblue2: #abcbd1;
 $borderblue--50: rgba(116, 141, 181, 0.5);
+$borderblue2: #abcbd1;
 $bubbles: #b7ad55;
+
 $mercury: #e5e7e3;
 $gallery: #f1f1ef;
+$amazon: #0d4773;
 $jaguar: #2B2B2B;
 
 $background: #e7e5e3;
@@ -41,7 +73,6 @@ $cardbottom: #e1dfdb;
 $cardbottom2: #d6d5d2;
 
 $contentarea: #c9c9c2;
-$white: white;
 
 
 $Gainsboro: #DCDCDC;
