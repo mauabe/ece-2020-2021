@@ -12,7 +12,7 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 2.2em;
-    color: $newivy;
+    color: $ivy;
     text-indent: 0;
     margin: 0.5em 0 0.5em 0;
     background: transparent;
@@ -39,7 +39,8 @@
       min-width: 320px;
       min-height: 300px;
       border-radius: 4px;
-      background: $sweetleaf--30;
+      border: 1px solid $black-60;
+      background: $ubatuba--30;
       align-items: start;
       padding: 1.2em;
       max-width: 100%;
@@ -47,12 +48,12 @@
       .frame{
         justify-self: center;
         border-radius: 2px;
-        border: 1px solid $ivy;
+        border: 1px solid $black-80;
         align-items: center;
         width: 150px;
         height: 190px;
         max-width: 150px;
-        margin: 0 auto 1em auto;
+        margin: 1em auto 1.5em auto;
         overflow: hidden;
         position: relative;
 
@@ -92,7 +93,7 @@
       }
 
       &:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
       }
     }
 
@@ -104,7 +105,8 @@
       min-width: 320px;
       min-height: 200px;
       border-radius: 2px;
-      background: $sweetleaf--30;
+      border: 1px solid $black-60;
+      background: $ubatuba--30;
       align-items: center;
       padding: 1em;
 
@@ -121,7 +123,8 @@
         }
       }
       &:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+        // filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.3));
       }
     }
 
@@ -152,9 +155,9 @@
         width: 95%;
 
         .card-name{
-          font-family: 'Lemon', sans-serif;
-          font-size: 1.2em;
-          color: $newivy;
+          font-family: 'Grand Hotel', sans-serif;
+          font-size: 1.85em;
+          color: $ivy;
           text-align: center;
           margin-bottom: 0.5em;
           line-height: 2.8;
@@ -164,24 +167,25 @@
   }
 
   .card-writers{
-    display: block;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: all 0.3s ease-in-out;
-    border-radius: 2px;
-    background: $sweetleaf--30;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    background: $ubatuba--30;
     justify-content: center;
     text-align: center;
     padding: 1em;
     min-height:450px;
     justify-self: center;
     width: 98%;
+    border: 1px solid $black-60;
   }
 
   .card-name{
     font-family: 'Grand Hotel', serif;
     font-weight: 700;
-    font-size: 1.5em;
-    color: $newivy;
+    font-size: 1.85em;
+    color: $ivy;
     text-justify: center;
     margin-bottom: 0.5em;
     line-height: 2.8;
@@ -193,16 +197,16 @@
     font-size: 1.4em;
     color: $ivy;
     text-align: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
   }
   .prof-title{
     font-family: 'Libre Caslon Text', serif;
     font-style: italic;
     font-weight: 400;
     font-size: 1em;
-    color: $black-40;
+    color: $black-60;
     text-align: center;
-    margin: 1em 0;
+    margin: .5em 0;
   }
 
   span.prof-title.dept{
@@ -211,7 +215,7 @@
     font-weight: 400;
     text-align: center;
     font-size: 1em;
-    color: $black-40;
+    color: $black-60;
     text-align: center;
     padding-bottom: 0.8em;
   }
@@ -229,7 +233,7 @@
     font-weight: 300  ;
     text-align: left;
     font-size: 1.2em;
-    color: $black-80;
+    color: $black-60;
     text-align: left;
     text-decoration: none;
   }
@@ -244,8 +248,8 @@
   }
 
   .frame-book{
-    margin: 1em auto;
-    border: 1px solid $ivy;
+    margin: 1em auto 1.5em;
+    border: 1px solid $black-80;
     align-items: center;
     width: 150px;
     height: 190px;
@@ -258,7 +262,7 @@
     position: relative;
     display: none;
     transition: all 5.3s ease-in-out;
-    border: 1px solid $ivy;
+    border: 1px solid $black-80;
     border-radius:  2px;
 
     overflow: hidden;
@@ -268,12 +272,14 @@
     width: 150px;
     height: 150px;
     transition: all 3.3s ease;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    // filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.3));
+
   }
 
   .card.book{
     object-position: 50% 50%;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
   }
 
   // .card.book:hover{
@@ -292,8 +298,8 @@
 
   div.card-name{
     font-family: 'Grand Hotel', sans-serif;
-    font-size: 1.5em;
-    color: $newivy;
+    font-size: 1.85em;
+    color: $ivy;
     text-justify: center;
     margin-bottom: 0.5em;
   }

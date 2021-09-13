@@ -25,7 +25,7 @@ class Article extends Component{
 
   render() {
     const {
-      articleId, professorName, professorTitle, articleImage1, articleImage2, articleImage3, articleImage4, articleImage5, articleImage6, articleImageProf, articleImageMain, articleImageAltText1, articleImageAltText2, articleImageAltText3, articleImageAltText4, articleImageAltText5,articleImageAltText6, articleImageAltTextProf, articleImageAltTextMain, articleCaption1, articleCaption2, articleCaption3, articleAuthor, articleImageCred, articleHeadline, articleSubhead
+      articleId, articleImage1, articleImage2, articleImage3, articleImage4, articleImage5, articleImage6, articleImageProf, articleImageMain, articleImageAltText1, articleImageAltText2, articleImageAltText3, articleImageAltText4, articleImageAltText5,articleImageAltText6, articleImageAltTextProf, articleImageAltTextMain, articleCaption1, articleCaption2, articleCaption3, articleAuthor, articleImageCred, articleHeadlineOne, articleHeadlineTwo, articleHeadlineThree
     } = this.props.story;
 
     //check if image exists, assign class name to "none" it is...
@@ -60,18 +60,16 @@ class Article extends Component{
         />
 
         <div className="article-header">
-            <img
-              className="author"
-              src={`${articleImageProf}`}
-              alt={`${articleImageAltTextProf}`}
-              title={`${professorName}`}
-            />
-
+          <img
+            className="author"
+            src={`${articleImageProf}`}
+            alt={`${articleImageAltTextProf}`}
+            title={`${articleId}`}
+          />
           <div className="article-headline">
-            <span className="article-professor-title">{professorTitle} </span>
-            <span className="article-professor-name">{professorName} </span>
-            <div className="headline">{articleHeadline} </div>
-            <div className="subhead">{ ReactHtmlParser(articleSubhead)} </div>
+            <div className="headline-lead">{articleHeadlineOne} </div>
+            <div className="headline">{articleHeadlineTwo} </div>
+            <div className="subhead">{ ReactHtmlParser(articleHeadlineThree)} </div>
           </div>
         </div>
 

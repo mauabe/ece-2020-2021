@@ -16,6 +16,9 @@ class Bubbles extends Component{
       articleSelection: this.props.articles[0].articleId
      }
      //articleId uses the same string value as articleSelection(which is also pathname).
+
+     //TODO: Add pathname to article
+     
      //defaults to first articleId at constructor
 		// console.log('%c PROPS at BUBBLES constructor', 'color:black;background:pink;padding:6px;border:1px dashed red', this.props)
   }
@@ -37,9 +40,12 @@ class Bubbles extends Component{
           pageView={pageView}
           articleId={obj.articleId}
           articleSelection={this.state.articleSelection}
-          professorTitle={obj.professorTitle}
-          professorName={obj.professorName}
-          articleAbrevTitle={obj.articleAbrevTitle}
+          bubbleTextOne={obj.bubbleTextOne}
+          bubbleTextTwo={obj.bubbleTextTwo}
+          bubbleTextThree={obj.bubbleTextThree}
+          articleHeadlineOne={obj.articleHeadlineOne}
+          articleHeadlineTwo={obj.articleHeadlineTwo}
+          articleHeadlineThree={obj.articleHeadlineThree}
           articleImageProf={obj.articleImageProf}
           articleImageAltTextProf={obj.articleImageAltTextProf}
           onClick={this.handleClick}
