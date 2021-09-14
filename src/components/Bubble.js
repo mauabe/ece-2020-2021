@@ -16,18 +16,19 @@ class Bubble extends Component{
   }
 
   render() {
-    const {pageView, articleId, articleSelection, articleAbrevTitle, articleImageProf, articleImageAltTextProf, professorTitle, professorName} = this.props ;
-    const className = ( articleSelection === articleId) ? `${articleId} active`: `${articleId}`;
+    const {pageView, articleId, articleSelection,  articleImageProf, articleImageAltTextProf, bubbleTextOne, bubbleTextTwo, bubbleTextThree} = this.props ;
+    const activeClassNameCheck = ( articleSelection === articleId) ? `${articleId} active`: `${articleId}`;
 
     return (
       <NavLink exact to={`/${pageView}/${articleId}`} activeClassName="active" className="bubble-link" onClick={this.handleBubbleClick} key={articleId}>
           <div className="bubble-frame">
-            <img src={`${articleImageProf}`} alt={`${articleImageAltTextProf}`} title={`${articleId}`} className={`bubble-image ${className}`} />
+            <img src={`${articleImageProf}`} alt={`${articleImageAltTextProf}`} title={`${articleId}`} className={`bubble-image ${activeClassNameCheck}`} />
           </div>
           <div>
-            <span className={`bubble-profTitle ${className}`}>{professorTitle} </span>&nbsp;<span className={`bubble-profName ${className}`}>{ ReactHtmlParser(professorName) }</span>
+            <div className={`bubble-text ${activeClassNameCheck}`}>{bubbleTextOne} </div>
+            <div className={`bubble-text ${activeClassNameCheck}`}>{bubbleTextTwo}</div>
+            <div className={`bubble-text ${activeClassNameCheck}`}>{bubbleTextThree}</div>
           </div>
-          <div className={`bubble-headline ${className}`}>{ ReactHtmlParser(articleAbrevTitle) }</div>
        </NavLink>
     );
   }

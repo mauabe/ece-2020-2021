@@ -21,14 +21,43 @@
     position: relative;
     width: 100%;
 
-    img.article-main-photo {
+    .container{
+      display: block;
       position: relative;
       top: 0;
       height: 180px;
       width: 100%;
-      object-position: 50% 50%;
-      object-fit: cover;
+
+      img.article-main-photo {
+        position: relative;
+        top: 0;
+        height: 180px;
+        width: 100%;
+        object-position: 50% 50%;
+        object-fit: cover;
+        overflow: hidden;
+        // background: rgb(65,42,64);
+      }
+      /* The overlay effect - lays on top of the container and over the image */
+      .overlay {
+        position: absolute;
+        top: 0;
+        height: 180px;
+        width: 100%;
+        background: rgb(99,62,84);
+        background: linear-gradient(rgba(108, 76, 95, 0.3), rgba(92, 65, 76, 0.3));
+        // color: #f1f1f1;
+        // z-index: 20;
+        transition: all .5s ease-in-out;
+        opacity:0.5;
+
+        &:hover {
+          // opacity: 1;
+          background: linear-gradient(rgba(108, 76, 95, 0.15), rgba(92, 65, 76, 0.15));
+        }
+      }
     }
+    /* When you mouse over the container, fade in the overlay title */
 
     .article-header{
       display: flex;
@@ -62,17 +91,17 @@
         margin: 0 0 4em 0;
         color: $peacock;
 
-        .article-professor-title, .article-professor-name {
+        .headline-lead {
           font-family: 'Oswald', sans-serif;
           font-weight: 300;
           font-size: 1.3em;
-          color: $peacock--80;
+          color: $black-80;
         }
         .headline{
           font-family: 'Quattrocento Sans', sans-serif;
           font-weight: 700;
-          font-size: 2.8em;
-          color: $peacock;
+          font-size: 2.8rem;
+          color: $ivy;
         }
         .subhead{
           font-family: 'Oswald', sans-serif;
@@ -111,7 +140,7 @@
         font-size: 2.5em;
         float: left;
         margin: -0.2em .4em 0 0;
-        color: $newivy;
+        color: $ivy;
         text-indent: 0;
       }
     }
@@ -199,7 +228,7 @@ img.none {
   transition: all .3s ease-in-out;
 
   &:hover{
-    color: $newivy;
+    color: $ivy;
   }
 }
 
@@ -259,14 +288,11 @@ img.none {
     left: 50%;
     right: 50%;
   }
-  .article-professor-title{
+  .headline-lead{
     font-size: 1.4em;
   }
-  .article-professor-name{
-    font-size: 1.7em;
-  }
   .article-headline{
-    font-size: 2em;
+    font-size: 1.7rem;
   }
   .article-subhead{
     font-size: 1.4em;

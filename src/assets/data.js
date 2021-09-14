@@ -13,7 +13,7 @@ export const topMenu = [
 export const subMenus = {
   'news': ['news0', 'news1', 'news2', 'news3','news4', 'news5', 'news6', 'news7', 'news8'],
   'highlights': ['highlight0', 'highlight1', 'highlight2', 'highlight3','highlight4', 'highlight5', 'highlight6'],
-  'students': ['students0', 'students1', 'students2', 'students3','students4', 'students5', 'fstudents6'],
+  'students': ['students0', 'students1', 'students2', 'students3','students4', 'students5', 'students6'],
   'faculty':['faculty0', 'faculty1', 'faculty2', 'faculty3','faculty4', 'faculty5', 'faculty6'],
   'overview':['overview0', 'overview1', 'overview2', 'overview3'],
   'alumni':['alumni0', 'alumni1', 'alumni2', 'alumni3', 'alumni4']

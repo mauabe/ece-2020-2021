@@ -31,7 +31,7 @@
 
     a, li.menu-item{
       // justify-self: flex-end;
-      color: $newivy;
+      color: $ivy;
       padding-left: 1.2em;
       padding-bottom: 0.3em;
       font-weight: 700;
@@ -39,18 +39,16 @@
       font-size: 1em;
       opacity: 1;
       cursor: pointer;
-      transform: all .4s ease-out;
+      transform: all .4s ease-in-out;
       // background-color: transparent;
 
       &:hover{
-        // opacity: .9;
-        color: $berry-menu--90;
         transform: all .4s ease-out;
+        color: $berry;
       }
       &:active{
-        // opacity: .8;
+        transform: all .4s ease-out;
         color: $berry;
-        // transform: all .4s ease-out;
       }
     }
 
