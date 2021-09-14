@@ -52,12 +52,14 @@ class Article extends Component{
     return (
     <div className={`article ${articleId}`}>
       <div className='article-content'>
-
-        <img src={`${articleImageMain}`}
-          alt={`${articleImageAltTextMain}`}
-          title={`${articleId}`}
-          className="article-main-photo"
-        />
+        <div className='container'>
+          <img src={`${articleImageMain}`}
+            alt={`${articleImageAltTextMain}`}
+            title={`${articleId}`}
+            className="article-main-photo"
+          />
+          <div className='overlay'></div>
+        </div>
 
         <div className="article-header">
           <img
