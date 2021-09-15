@@ -45,14 +45,18 @@ h3{
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 1.2em;
+  color: $ivy;
 }
 p {
   font-family: 'Libre Caslon Text', serif;
   font-weight: 400;
 }
-p > span{
+p > {
+  span{
   font-family: 'Libre Caslon Text', serif;
-  font-weight: 400i;
+  font-weight: 400;
+  font-style: italic;
+  }
 }
 
 ul {
