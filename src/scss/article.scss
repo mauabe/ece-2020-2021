@@ -13,8 +13,6 @@
   margin: 0 12% 2em 12%;
   background: $sweetleaf--30;
   background-image:  url("../assets/images/overlay.png");
-
-  // justify-content: flex-start;
   overflow: hidden;
 
   .article-content{
@@ -338,21 +336,21 @@ img.none {
 @media only screen and (max-width: 950px) {
   .picture-area.pict-area{
     display: block;
-    margin: auto;
+    // margin: auto;
     .row{
       display: block;
       align-items: center;
-      margin: 1em auto 1em auto;
+      // margin: 1em auto 1em auto;
     }
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .article {
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-}
+// @media only screen and (max-width: 650px) {
+//   .article {
+//     margin-left: 4%;
+//     margin-right: 4%;
+//   }
+// }
 
 @import './grid-layout.scss';
 @import './grid-cards.scss';
