@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Bubbles from '../components/Bubbles';
+import Page from '../components/Page';
 import {articlesFaculty} from '../assets/articlesFaculty.js';
 
 class Faculty extends Component{
@@ -11,7 +11,7 @@ class Faculty extends Component{
   render() {
     return (
       <div className="content-area">
-        <Bubbles
+        <Page
           pageView="faculty"
           articles={articlesFaculty}
         />
