@@ -54,7 +54,7 @@
           background: linear-gradient(rgba(108, 76, 185, 0.5), rgba(92, 65, 126, 0.5));
         }
       }
-    }
+    }  //end container
     /*
       NEWS
       background: linear-gradient(rgba(108,76,195,.8),rgba(92,65,76,.8));
@@ -76,51 +76,59 @@
       display: flex;
       flex-direction: row;
       // position: relative;
-      margin: 3em 2em 2em 2em;
-      padding-bottom: 1.4em;
+      margin: 3rem 2rem 2rem 2rem;
       justify-items: start;
       overflow: auto;
 
-      img.author{
+      .author-frame{
+        position: relative;
+        width: 9rem;
+        height: 9rem;
         overflow: hidden;
-        border-radius: 3px;
-        filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.2));
-        width: 9em;
-        height: 9em;
-        object-fit: cover;
-        z-index: 10;
-        margin-right: 4em;
-        border: 1px solid $ivy;
         background-color: $white;
+        border: 1px solid $ivy;
+        border-radius: 4px;
+        // filter:  grayscale(0.8);
+        filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.2));
+        margin: 0 2rem 0 0 ;
+        margin-right: 4rem;
         transition: all 0.3s ease-in-out;
+
+        img.author{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          // z-index: 10;
+        }
+
         &:hover{
-          // object-position: 1% 1%;
-          filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.3));
+          filter: grayscale(.1) drop-shadow(6px 6px 10px rgba(0,0,0,0.3));
         }
       }
 
       .article-headline{
         position: relative;
-        margin: 0 0 4em 0;
-        color: $peacock;
+        margin-bottom: 3rem;
+        font-size: 1rem;
+        color: $ivy;
 
         .headline-lead {
           font-family: 'Oswald', sans-serif;
           font-weight: 300;
           font-size: 1.3em;
-          color: $black-80;
+          color: $black-60;
         }
         .headline{
           font-family: 'Quattrocento Sans', sans-serif;
           font-weight: 700;
-          font-size: 2.8rem;
-          color: $ivy;
+          font-size: 2.8em;
+          // color: $ivy;
         }
         .subhead{
           font-family: 'Oswald', sans-serif;
-          font-weight: 500;
+          font-weight: 300;
           font-size: 1.8em;
-          color: $peacock--80;
+          color: $black-60;
         }
       }
     }
@@ -158,14 +166,15 @@
         text-indent: 0;
       }
     }
-  }
+  } //end article-content
+
   p > {
     span {
       font-weight: bold;
       font-style: italic;
     }
   }
-}
+}  //end or article
 
 .picture-area.pict-area{
   display: grid;
@@ -241,12 +250,11 @@ img.none {
   font-weight: 400;
   font-style: italic;
   font-size: 0.9em;
-  font-style: italic;
-  color: $juniper;
+  color: $black-80;
   transition: all .3s ease-in-out;
 
   &:hover{
-    color: $ivy;
+    color: $berry;
   }
 }
 
@@ -259,6 +267,8 @@ img.none {
 	right: 50%;
 	width: 100vw;
 }
+
+
 
 //additional CSS for spcific pages:
 
@@ -293,57 +303,52 @@ img.none {
   margin: 1em 0 1em 0;
 }
 
-@media only screen and (max-width: 900px) {
-  .article {
-    margin-left: 8%;
-    margin-right: 8%;
-    // margin-left: 50%;
-    // margin-right: 50%;
-  }
-  .author{
-    margin-top: 2em;
-    margin-bottom: 1em;
-    left: 50%;
-    right: 50%;
-  }
-  .headline-lead{
-    font-size: 1.4em;
-  }
-  .article-headline{
-    font-size: 1.7rem;
-  }
-  .article-subhead{
-    font-size: 1.4em;
-  }
-  .text-copy{
-    text-indent: 2em;
-    margin-top: 0px;
-  }
-  .article-header{
-    margin-bottom: 2em;
-  }
-  .article-subhead{
-    font-size: 2em;
-    margin-bottom: 2em;
-  }
-  .twocolumns {
-    display: grid;
-    grid-column: span 1;
-    grid-auto-flow: column;
-  }
-}
+// @media only screen and (max-width: 900px) {
+//   .article {
+//     margin-left: 8%;
+//     margin-right: 8%;
+//   }
+//   // .author{
+//   //   margin-top: 2em;
+//   //   margin-bottom: 1em;
+//   //   left: 50%;
+//   //   right: 50%;
+//   // }
+//   .headline-lead{
+//     font-size: 1.2em;
+//   }
+//   .article-headline{
+//     font-size: 1.8rem;
+//   }
+//   .article-subhead{
+//     font-size: 1.4em;
+//     // margin-bottom: 1em;
+//   }
+//   .text-copy{
+//     text-indent: 2em;
+//     margin-top: 0px;
+//   }
+//   .article-header{
+//     margin-bottom: 2em;
+//   }
+//   .twocolumns {
+//     display: grid;
+//     grid-column: span 1;
+//     grid-auto-flow: column;
+//   }
+// }
 
-@media only screen and (max-width: 950px) {
-  .picture-area.pict-area{
-    display: block;
-    // margin: auto;
-    .row{
-      display: block;
-      align-items: center;
-      // margin: 1em auto 1em auto;
-    }
-  }
-}
+// @media only screen and (max-width: 950px) {
+//   .picture-area.pict-area{
+//     display: block;
+//     // margin: auto;
+//     .row{
+//       display: block;
+//       align-items: center;
+//       // margin: 1em auto 1em auto;
+//     }
+//   }
+// }
 
 // @media only screen and (max-width: 650px) {
 //   .article {

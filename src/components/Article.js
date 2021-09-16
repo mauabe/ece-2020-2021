@@ -55,19 +55,21 @@ class Article extends Component{
         <div className='container'>
           <img src={`${articleImageMain}`}
             alt={`${articleImageAltTextMain}`}
-            title={`${articleId}`}
+            title={`${articleAuthor}`}
             className="article-main-photo"
           />
           <div className='overlay'></div>
         </div>
 
         <div className="article-header">
-          <img
-            className="author"
-            src={`${articleImageProf}`}
-            alt={`${articleImageAltTextProf}`}
-            title={`${articleId}`}
-          />
+          <div className="author-frame">
+            <img
+              className="author"
+              src={`${articleImageProf}`}
+              alt={`${articleImageAltTextProf}`}
+              title={`${articleAuthor}`}
+            />
+          </div>
           <div className="article-headline">
             <div className="headline-lead">{articleHeadlineOne} </div>
             <div className="headline">{articleHeadlineTwo} </div>

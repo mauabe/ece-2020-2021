@@ -16,15 +16,26 @@ class Bubble extends Component{
   }
 
   render() {
-    const {pageView, articleId, articleSelection,  articleImageProf, articleImageAltTextProf, bubbleTextOne, bubbleTextTwo, bubbleTextThree} = this.props ;
+    const {pageView, articleId, articleSelection,  articleImageProf, articleImageAltTextProf, bubbleTextOne, bubbleTextTwo, bubbleTextThree, articleAuthor} = this.props ;
     const activeClassNameCheck = ( articleSelection === articleId) ? `${articleId} active`: `${articleId}`;
 
     return (
-      <NavLink exact to={`/${pageView}/${articleId}`} activeClassName="active" className="bubble-link" onClick={this.handleBubbleClick} key={articleId}>
-          <div className="bubble-frame">
-            <img src={`${articleImageProf}`} alt={`${articleImageAltTextProf}`} title={`${articleId}`} className={`bubble-image ${activeClassNameCheck}`} />
-          </div>
-          <div>
+      <NavLink
+        exact to={`/${pageView}/${articleId}`}
+        activeClassName="active"
+        className={`bubble-link ${activeClassNameCheck}`}
+        onClick={this.handleBubbleClick}
+        key={articleId}
+      >
+          <div className={`bubble-frame ${activeClassNameCheck}`}>
+            <img
+              src={`${articleImageProf}`}
+              alt={`${articleImageAltTextProf}`}
+              title={`${articleAuthor}`}
+              className={`bubble-image ${activeClassNameCheck}`}
+            />
+          </div >
+          <div className="bubble-text-link">
             <div className={`bubble-text ${activeClassNameCheck}`}>{bubbleTextOne} </div>
             <div className={`bubble-text ${activeClassNameCheck}`}>{bubbleTextTwo}</div>
             <div className={`bubble-text ${activeClassNameCheck}`}>{bubbleTextThree}</div>

@@ -15,7 +15,7 @@ class Story extends Component{
 
   render (){
     return(
-      <div><h2>HELLO FROM H2!</h2> Hello from outside H2</div>
+      <div><h2>There is nothing here</h2> This content is not available.</div>
     )
   }
 
