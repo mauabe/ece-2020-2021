@@ -47,7 +47,7 @@ class Article extends Component{
     let imgCreditClassName = (articleImageCred.length === 0) ? "none" : "image-credits";
     let authorCreditClassName = (articleAuthor.length === 0) ? "none" : "author-credits";
     let pictClassName = (row1ClassName === "none") ? "none" : "pict-area";
-    let creditsClassName = (articleImageCred.length === 0 && articleAuthor.length === 0) ? "none" : "credits";
+    let creditsClassName = (articleImageCred.length === 0) ? "none" : "credits";
 
     return (
     <div className={`article ${articleId}`}>
@@ -101,7 +101,6 @@ class Article extends Component{
 
         <div className={`${creditsClassName} ${articleId}`}>
           <p className={imgCreditClassName}>{articleImageCred}</p>
-          <p className={authorCreditClassName}>{articleAuthor}</p>
         </div>
 
       </div>
