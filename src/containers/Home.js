@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter, BrowserRouter } from "react-router-dom";
 import * as data from '../assets/data';
+import ReactHtmlParser from 'react-html-parser';
 
 function usePanel(active) {
   const ref = React.useRef(null);
@@ -87,9 +88,10 @@ function Panel({ panel, offset }) {
     >
       <BrowserRouter basename="/2020-2021/temp"/>
         <div className="panelContent">
-          <p className="panelTitle">{panel.title}</p>
-          <p className="panelName">{panel.name}</p>
-          <p className="panelText">{panel.text}</p>
+          <div className="panelTitle">{panel.title}</div>
+          <div className="panelFirstName">{ReactHtmlParser(panel.firstname)}</div>
+          <div className="panelName">{panel.name}</div>
+          <div className="panelText">{ReactHtmlParser(panel.text)}</div>
       </div>
           <Link to={`/news/${panel.link}`} >
             <div className="panelLinkButton">more > > > </div>

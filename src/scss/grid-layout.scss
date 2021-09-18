@@ -163,8 +163,7 @@
     justify-content: space-between;
 
     .research-center{
-      // overflow: hidden;
-      // max-width: 250px;
+      background-color: ubatuba--10;
       font-size: 1.1em;
       margin-bottom: 1.5em;
       font-family: 'Oswald', sans-serif;
@@ -175,7 +174,7 @@
       text-align: left;
 
       img.center-logo{
-        background-color: transparent;
+        // background-color: transparent;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
         transition: all 0.3s ease-in-out;
         width: 250px;
@@ -219,7 +218,7 @@
 
     .research-center:hover{
       img.center-logo{
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
       }
     }
   }

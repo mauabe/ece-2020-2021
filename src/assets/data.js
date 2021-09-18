@@ -30,75 +30,83 @@ export const logos = {
 export const panels = [
   {
     id: "0",
-    title: "Professor Suhas",
+    title: "Professor",
+    firstname: "Suhas",
     name: "Diggavi",
-    text: "Received Amazon Research Award and Guggenheim Fellowship",
+    text: "<div>Received Amazon Research Award and </br>Guggenheim Fellowship</div>",
     linkCopy: "more",
     image: "https://source.unsplash.com/6k2wkqGMw1I/1500x1500",
-    link: "news1"
+    link: "highlights1"
   },
   {
     id: "1",
-    title: "Professor Achuta",
+    title: "Professor",
+    firstname: "Achuta",
     name: "Kadambi",
-    text: "Featured in \"Science Journal\" and Received NSF Career Award",
+    text: '<div>Received </br>NSF </br>Career </br>Award </br>and </br>Featured </br>in </br>"Science </br> Journal"</div>',
     linkCopy: "more",
     image: "https://source.unsplash.com/13g9FZqVvNY/1500x1500",
-    link: "news2"
+    link: "highlights2"
   },
   {
     id: "2",
-    title: "Professor Xiang Anthony",
+    title: "Professor",
+    firstname: "Xiang Anthony",
     name: "Chen",
-    text: "Received NSF Career and Young Investigator Awards",
+    text: "<div>Received </br>NSF Career </br>and Young Investigator Awards</div>",
     linkCopy: "more",
     image: "https://source.unsplash.com/uNyF_FXn4qw/1500x1500",
-    link: "news3"
+    link: "highlights3"
   },
   {
     id: "3",
-    title: "Professor Sam",
+    title: "Professor ",
+    firstname: "Sam",
     name: "Emaminejad",
-    text: "Research Featured on Cover of \"Lab on a Chip\" ",
+    text: '<div>Research Featured </br>on Cover </br> of "Lab </br>on a Chip"</div>',
     linkCopy: "more",
     image: "https://source.unsplash.com/Xf071ws2Icg/1500x1500",
-    link: "news4"
+    link: "highlights4"
   },
   {
     id: "4",
-    title: "Professor Kang",
+    title: "Professor",
+    firstname: "Kang",
     name: "Wang",
-    text: "Received NSF Grant  to Improve Quantum Computing Chips",
+    text: "<div>Received </br>NSF Grant </br>to Improve Quantum Computing Chips</div>",
     linkCopy: "more",
     image: "https://source.unsplash.com/KJ241ZAOYwU/1500x1500",
-    link: "news5"
+    link: "highlights5"
   },
   {
     id: "5",
-    title: "Distinguished Professor Yahya",
+    title: "Distinguished",
+    firstname: "<div>Professor </br>Yahya</div>",
     name: "Rahmat-Samii",
-    text: "Released New Book and Co-authored Best Paper Award of AIAA",
+    text: "<div>Releases </br>New Book</br> and Co-</br>authored </br>Best Paper </br>Award of </br>AIAA</div>",
     linkCopy: "more",
     image: "https://source.unsplash.com/3cIPFNW3wog/1500x1500",
-    link: "news6"
+    link: "highlights6"
   },
   {
     id: "6",
-    title: "Alumni Adrian",
+    title: "Alumni ",
+    firstname: "Adrian",
     name: "Tang",
-    text: "Recognized as 2021 Outstanding Young Engineer by IEEE MTT-S",
+    text: "<div>Recognized </br>as 2021 Outstanding Young </br>Engineer by IEEE MTT-S</div>",
     linkCopy: "more...",
     image: "https://source.unsplash.com/Hjez0AY_c4k/1500x1500",
-    link: "news7"
+    link: "news5"
   },
   {
     id: "7",
-    title: "UCLA Alumna",
-    name: "Alumni ",
-    text: "Inspiring Others through Work at NASA JPL",
+    title: "Alumna",
+    firstname: "Kat",
+    name: "Echazarreta ",
+    text: "<div>Inspiring Others </br>through </br>Work at NASA's JPL</div>",
     linkCopy: "more...",
     image: "https://source.unsplash.com/Ljz_Wmk7t7g/1500x1500",
-    link: "news8"
+    link: "news6"
   },
 
 ];
