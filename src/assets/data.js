@@ -122,7 +122,7 @@ export const panels = [
     student lab: fr5h_07OrPI
     engineer laptop: Hjez0AY_c4k
     propulsion i_14EbINjKY
-    sound studio: wFW4zlulBT8
+    sound studio: wFW4zlulBT8 --aiello
     radar antenna: 3cIPFNW3wog
     arm cast: 13g9FZqVvNY
     Kenedy Space Ctr: Ljz_Wmk7t7g
