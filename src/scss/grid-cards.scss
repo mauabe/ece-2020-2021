@@ -56,10 +56,10 @@
         margin: 1em auto 1.5em auto;
         overflow: hidden;
         position: relative;
+        background-color: white;
 
         img.card-pic-fellowship{
           border: 0px ;
-          background-color: transparent;
           width: 150px;
           height: 190px;
           object-fit: cover;
@@ -68,7 +68,6 @@
         }
         img.card-pic{
           border: 0px ;
-          background-color: transparent;
           width: 150px;
           height: 190px;
           object-fit: cover;
@@ -80,7 +79,7 @@
       img.logo-pic{
         border: 0px ;
         margin:0.4em;
-        background-color: transparent;
+        background-color: white;
         width: 95%;
         height: 190px;
         object-fit: contain;

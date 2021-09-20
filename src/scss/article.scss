@@ -75,20 +75,20 @@
     .article-header{
       display: flex;
       flex-direction: row;
-      // position: relative;
+      position: relative;
       margin: 3rem 2rem 2rem 2rem;
-      justify-items: start;
+      justify-content: flex-start;
       overflow: auto;
 
       .author-frame{
-        position: relative;
+        flex: 0 0 auto;
+        // position: absolute;
         width: 9rem;
         height: 9rem;
         overflow: hidden;
         background-color: $white;
         border: 1px solid $ivy;
         border-radius: 4px;
-        // filter:  grayscale(0.8);
         filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.2));
         margin: 0 2rem 0 0 ;
         margin-right: 4rem;
@@ -98,7 +98,6 @@
           height: 100%;
           width: 100%;
           object-fit: cover;
-          // z-index: 10;
         }
 
         &:hover{
