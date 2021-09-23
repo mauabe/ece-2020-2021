@@ -147,7 +147,7 @@ export const articlesNews = [
     articleImageAltText6: '',
     articleImageMain: '/2020-2021/img/madni-india-flags.jpg',
     articleImageAltTextMain: 'Asad Madni',
-    articleImageProf: '/2020-2021/img/Madni_hero.jpg',
+    articleImageProf: '/2020-2021/img/madnimio4.jpg',
     articleImageAltTextProf: 'Asad Madni',
     articleImageCred: 'Photo by <a href="https://unsplash.com/@naveedahmed?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Naveed Ahmed</a> on <a href="https://unsplash.com/s/photos/india?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>   Photo by <a href="https://unsplash.com/@sikandar_photographer06?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sikandar Ali</a> on <a href="https://unsplash.com/s/photos/india-flag?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>    ',
     articleCaption1: 'Asad Madni Receives Major Recognitions from Canadian Academy of Engineer, IEEE Sensor Council and NRI Welfare Society of India',
