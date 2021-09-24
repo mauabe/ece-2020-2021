@@ -3,6 +3,7 @@
 
 .page-submenu{
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
@@ -89,4 +90,18 @@
       }
     }
   } //end bubble-link
+
+  @media only screen and (max-width: 1250px) {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    margin: 0 8% -2px 8%;
+    // .author{
+    //   margin-top: 2em;
+    //   margin-bottom: 1em;
+    //   left: 50%;
+    //   right: 50%;
+    // }
+  }
 }

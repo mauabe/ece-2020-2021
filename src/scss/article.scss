@@ -173,7 +173,6 @@
       font-style: italic;
     }
   }
-}  //end or article
 
 .picture-area.pict-area{
   display: grid;
@@ -237,6 +236,9 @@
 .picture-area.none{
   display: none;
 }
+
+}  //end or article
+
 img.none {
   display: none;
 }
@@ -267,14 +269,6 @@ img.none {
 	width: 100vw;
 }
 
-
-
-//additional CSS for spcific pages:
-
-.text-body, .text-body.annualreport{
-  width: 100%;
-}
-
 .twocolumns{
   display: grid;
   grid-gap: 3em;
@@ -283,15 +277,25 @@ img.none {
   align-content: start;
   justify-content: space-between;
   margin-bottom: 1em;
-  .half{
-    flex: 50%;
-    align-content: start;
-  }
   .spacer{
-      height: 1em;
+    height: 1em;
   }
 }
-.grid-cards.twocolumns{
+.half{
+  // display: grid;
+  // align-items: start
+  flex: 1 1 50%;
+  align-content: start;
+}
+
+
+//additional CSS for spcific pages:
+
+.text-body, .text-body.annualreport{
+  width: 100%;
+}
+
+.grid-cards{
   display: grid;
   grid-gap: 3em;
   grid-template-columns: 1fr 1fr;
@@ -302,59 +306,74 @@ img.none {
   margin: 1em 0 1em 0;
 }
 
-// @media only screen and (max-width: 900px) {
-//   .article {
-//     margin-left: 8%;
-//     margin-right: 8%;
-//   }
-//   // .author{
-//   //   margin-top: 2em;
-//   //   margin-bottom: 1em;
-//   //   left: 50%;
-//   //   right: 50%;
-//   // }
-//   .headline-lead{
-//     font-size: 1.2em;
-//   }
-//   .article-headline{
-//     font-size: 1.8rem;
-//   }
-//   .article-subhead{
-//     font-size: 1.4em;
-//     // margin-bottom: 1em;
-//   }
-//   .text-copy{
-//     text-indent: 2em;
-//     margin-top: 0px;
-//   }
-//   .article-header{
-//     margin-bottom: 2em;
-//   }
-//   .twocolumns {
-//     display: grid;
-//     grid-column: span 1;
-//     grid-auto-flow: column;
-//   }
-// }
+/* Large screens */
+@media only screen and (max-width: 1200px) {
+  .article {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  // .author{
+  //   margin-top: 2em;
+  //   margin-bottom: 1em;
+  //   left: 50%;
+  //   right: 50%;
+  // }
+  .headline-lead{
+    font-size: 1.2em;
+  }
+  .article-headline{
+    font-size: 1.8rem;
+  }
+  .article-subhead{
+    font-size: 1.4em;
+    // margin-bottom: 1em;
+  }
+  .text-copy{
+    text-indent: 2em;
+    margin-top: 0px;
+  }
+  .article-header{
+    margin-bottom: 2em;
+  }
 
-// @media only screen and (max-width: 950px) {
-//   .picture-area.pict-area{
-//     display: block;
-//     // margin: auto;
-//     .row{
-//       display: block;
-//       align-items: center;
-//       // margin: 1em auto 1em auto;
-//     }
-//   }
-// }
+  .picture-area, .pict-area{
+    display: block;
+    // margin: auto;
+    .row{
+      display: block;
+      align-items: center;
+      // margin: 1em auto 1em auto;
+    }
+  }
 
-// @media only screen and (max-width: 650px) {
-//   .article {
-//     margin-left: 4%;
-//     margin-right: 4%;
-//   }
-// }
+  .twocolumns {
+    display: grid;
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+  }
+}
+
+/* Medium screens */
+
+@media only screen and (max-width: 950px) {
+  .picture-area.pict-area{
+    display: block;
+    // margin: auto;
+    .row{
+      display: block;
+      align-items: center;
+      // margin: 1em auto 1em auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .article {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
 
 @import './grid-layout.scss';
 @import './grid-cards.scss';
