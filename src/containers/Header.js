@@ -14,7 +14,7 @@ class Header extends Component{
       pageView: '',
       logoPick: ece,
     }
-		// console.log('%c PROPS at HEADER constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
+		// console.log('%c PROPS at NAVIGATION constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
   }
 
   componentDidMount(){
