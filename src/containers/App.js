@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
 import '../scss/styles.scss';
 
-import Header from './Header';
+import Navigation from './Navigation';
 import Home from './Home';
 import News from './News';
 import Highlights from './Highlights';
@@ -21,7 +21,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Header/>
+        <Navigation/>
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/news' component={News}/>
