@@ -97,7 +97,7 @@ export const articlesStudents = [
     articleCaption2: '',
     articleCaption3: '',
     articleAuthor: '',
-    textCopy: '<div class="grid-layout"><div class="twocolumns"><div class="half"><div class="page-award">Hannaneh Hojaiji</div><div class="page-img"><img src="/2020-2021/img/student-Hannaneh-Hojaiji.jpg"></div></div><div class="half"><div class="page-award">Anthony Kim</div><div class="page-img"><img src="/2020-2021/img/student-Anthony-Kim.jpg"></div></div></div><div class="twocolumns"><div class="half"><div class="page-award"> Monsoor Tonmoy</div><div class="page-img"><img src="/2020-2021/img/student-Monsoor-Tonmoy.jpg"></div></div><div class="half"><div class="page-award"> Junbo Wang</div><div class="page-img"><img src="/2020-2021/img/student-Junbo-Wang.jpg"></div></div></div></div>'
+    textCopy: '<div class="grid-layout"><div class="twocolumns"><div class="half"><div class="page-award"> Junbo Wang</div><div class="page-img"><img src="/2020-2021/img/student-Junbo-Wang.jpg"></div></div><div class="half"><div class="page-award">Anthony Kim</div><div class="page-img"><img src="/2020-2021/img/student-Anthony-Kim.jpg"></div></div></div><div class="twocolumns"><div class="half"><div class="page-award"> Monsoor Tonmoy</div><div class="page-img"><img src="/2020-2021/img/student-Monsoor-Tonmoy.jpg"></div></div><div class="half"><div class="page-award">Hannaneh Hojaiji</div><div class="page-img"><img src="/2020-2021/img/student-Hannaneh-Hojaiji.jpg"></div></div></div></div>'
   },
   {
     articleId: 'studentcenters',
