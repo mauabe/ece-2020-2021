@@ -157,8 +157,8 @@ export const articlesHighlights = [
   },
   {
     articleId: 'yahya',
-    bubbleTextOne: 'Distinguished ',
-    bubbleTextTwo: ' Professor Yahya ',
+    bubbleTextOne: 'Professor',
+    bubbleTextTwo: 'Yahya ',
     bubbleTextThree: 'Rahmat-Samii',
     articleHeadlineOne: '',
     articleHeadlineTwo: 'Professor Rahmat-Samii Releases New Book and Wins Best paper Award of AIAA',

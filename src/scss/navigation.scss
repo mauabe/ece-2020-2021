@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import "./variables.scss";
+
+.navigation {
+  display: flex;
+  z-index: 20;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1.3em;
+
+  .logos{
+    margin: 0 2rem;
+    flex: none;
+    position: fixed;
+
+    .logo-image{
+      width: 98px;
+      height: auto;
+    }
+  }
+
+  ul.menu-container{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 13% 1em 13%;
+    height: 44px;
+    background: transparent;
+
+    a, li.menu-item{
+      // justify-self: flex-end;
+      color: $ivy;
+      padding-left: 1.2em;
+      padding-bottom: 0.3em;
+      font-weight: 700;
+      font-family: Oswald;
+      font-size: 1em;
+      opacity: 1;
+      cursor: pointer;
+      transform: all .4s ease-in-out;
+      // background-color: transparent;
+
+      &:hover{
+        transform: all .4s ease-out;
+        color: $berry;
+      }
+      &:active{
+        transform: all .4s ease-out;
+        color: $berry;
+      }
+    }
+
+  }
+
+  // /* Medium screens */
+  // @media all and (max-width: 800px) {
+  //   margin-bottom: 2em;
+
+  // }
+
+  /* Medium screens */
+  @media all and (max-width: 850px) {
+    .navigation {
+      min-height: auto;
+
+      .menu-container {
+      //     /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        justify-content: space-around;
+      }
+    }
+  }
+
+  /* Small screens */
+  @media all and (max-width: 600px) {
+    .menu-container {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+}
