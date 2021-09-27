@@ -10,7 +10,7 @@ function usePanel(active) {
     if (!ref.current || !active) {
       return;
     }
-    console.log('React usePanel useEffect ref:', ref)
+    // console.log('React usePanel useEffect ref:', ref)
 
     const state = {
       rect: undefined,
@@ -109,12 +109,9 @@ function Home() {
   return(
     <div className="content-area">
       <div className="panelsContainer">
-        {console.log('home content-area panelsContainer data.panels:', data.panels)}
-        {console.log('home content-area panelsContainer state.panelIndex:', state)}
 
           {data.panels.map((panel, i) => {
             let offset = data.panels.length + (state.panelIndex - i)+ 1;
-            {console.log('home inside map panel i:', panel)}
             return (
                 <Panel
                   panel={panel}

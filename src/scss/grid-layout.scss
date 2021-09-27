@@ -75,14 +75,14 @@
   }
 
   .page-img{
-    // display: grid;
-    // grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
     text-indent: 0;
     overflow: hidden;
+    width: 450px;
+    height: 550px;
 
     img{
-      width: 450px;
-      height: 550px;
       object-position: 50% 50%;
       object-fit: contain;
     }
