@@ -36,7 +36,7 @@ class Bubble extends Component{
             />
           </div >
           <div className="bubble-text-link">
-            <div className={`bubble-text ${activeClassNameCheck}`}>{bubbleTextOne} </div>
+            <div className={`bubble-text ${activeClassNameCheck}`}>{ReactHtmlParser(bubbleTextOne)} </div>
             <div className={`bubble-text ${activeClassNameCheck}`}>{bubbleTextTwo}</div>
             <div className={`bubble-text ${activeClassNameCheck}`}>{bubbleTextThree}</div>
           </div>
