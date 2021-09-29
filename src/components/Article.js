@@ -101,7 +101,7 @@ class Article extends Component{
 
         <div className={`${creditsClassName} ${articleId}`}>
           <p className={imgCreditClassName}>{articleImageCred}</p>
-          <p className={authorCreditClassName}>{authorCreditClassName}</p>
+          <p className={authorCreditClassName}>{articleAuthor}</p>
         </div>
 
       </div>
