@@ -1,14 +1,11 @@
 export const topMenu = [
-  ['news', 'Department News'],
-  ['highlights', 'Faculty Highlights'],
-  ['students', 'Students & Teaching'],
-  ['faculty', 'ECE Faculty'],
-  ['overview', 'Department Overview'],
-  ['alumni', 'Alumni & Partnerships']
+  // ['news', 'Department News'],
+  // ['highlights', 'Faculty Highlights'],
+  // ['students', 'Students & Teaching'],
+  ['faculty', 'ECE Faculty']
+  // ['overview', 'Department Overview'],
+  // ['alumni', 'Alumni & Partnerships']
 ];
-
-// console.log('topMenu:', topMenu)
-
 
 export const subMenus = {
   'news': ['news0', 'news1', 'news2', 'news3','news4', 'news5', 'news6', 'news7', 'news8'],

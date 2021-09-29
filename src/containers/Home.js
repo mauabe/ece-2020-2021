@@ -86,16 +86,16 @@ function Panel({ panel, offset }) {
         "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
       }}
     >
-      <BrowserRouter basename="/2020-2021/temp"/>
+      <BrowserRouter basename="/2020-2021/fac"/>
         <div className="panelContent">
           <div className="panelTitle">{panel.title}</div>
           <div className="panelFirstName">{ReactHtmlParser(panel.firstname)}</div>
           <div className="panelName">{panel.name}</div>
           <div className="panelText">{ReactHtmlParser(panel.text)}</div>
       </div>
-          <Link to={`/news/${panel.link}`} >
+          {/* <Link to={`/news/${panel.link}`} > */}
             <div className="panelLinkButton">more > > > </div>
-          </Link>
+          {/* </Link> */}
     </div>
   );
 }
