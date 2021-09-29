@@ -218,14 +218,10 @@
   display: none;
 }
 .credits{
-  margin: 1em;
+  padding: 2rem;
+  // margin: 1.5rem;
 
-  .image-credits{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: .8 mio4
-    em;
-  }
+  .image-credits,
   .author-credits{
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
