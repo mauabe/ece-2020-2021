@@ -90,11 +90,14 @@
     }
   }
 
-  .page-img.student-centers{
+  .student-centers{
     display: grid;
     grid-template-columns: 1fr;
     text-indent: 0;
     overflow: hidden;
+    width: 650px;
+    height: 550px;
+    // object-fit: cover;
 
     img{
       // width: 450px;
