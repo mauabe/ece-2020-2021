@@ -13,7 +13,6 @@
   background: $ubatuba--70;
   background-image:  url("../assets/images/overlay.png");
   border-bottom: 4px dashed $ivy;
-  // width: 100%;
   transition: all .4s ease-in-out;
 
   .bubble-link {
@@ -26,14 +25,14 @@
 
       .bubble-frame{
         position: relative;
-        width: 4em;
-        height: 4em;
+        width: 4rem;
+        height: 4rem;
         overflow: hidden;
         background-color: $white;
         border: 1px solid $ivy;
         border-radius: 3px;
         filter: grayscale(0.8);
-        margin: 10px auto;
+        margin: 10px;
 
         img.bubble-image{
           height: 100%;
@@ -48,44 +47,39 @@
           font-weight: 700;
           font-size: 0.9em;
           color: $black-70;
-          // &:first-child {
-          //   font-family: 'Oswald', sans-serif;
-          //   font-weight: 500;
-          // }
 
           &.active {
-            transition: all .4s ease-in-out;
+            transition: all .3s ease-in-out;
             color: $berry;
           }
         }
       }
 
     &.active {
-      transition: all .4s ease-in-out;
+      transition: all .3s ease-in-out;
       color: $berry;
 
       .bubble-frame{
         transition: all .4s ease-in-out;
         border: 1px solid $berry;
-        box-shadow: 0 3px 9px rgba(0,0,0,0.2);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
         filter: grayscale(0.1);
       }
     }
 
     &.bubble-link:focus,
     &.bubble-link:hover  {
-      transition: all .4s ease-in-out;
+      transition: all .3s ease-in-out;
       color: $berry--70;
 
       .bubble-frame{
-        transition: all .4s ease-in-out;
         border: 1px solid $berry--70;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        // filter: grayscale(0.4);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 3px 4px rgba(0, 0, 0, 0.4);
         filter: brightness(0.8);
+        transition: all .3s ease-in-out;
       }
       .bubble-text {
-        transition: all .4s ease-in-out;
+        transition: all .3s ease-in-out;
         color: $berry--70;
       }
     }
