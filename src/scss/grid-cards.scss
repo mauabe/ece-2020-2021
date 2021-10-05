@@ -34,7 +34,9 @@
     text-indent: 0;
 
     .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
+      // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
       transition: all 0.3s ease-in-out;
       min-width: 320px;
       min-height: 300px;
@@ -93,14 +95,18 @@
 
       &:hover {
         transition: all 0.3s ease-in-out;
-        box-shadow: 0 4px 12px 0 rgba(0,0,0,0.5);
+        // box-shadow: 0 4px 12px 0 rgba(0,0,0,0.5);
+        // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
       }
     }
 
     .card-partner{
       display: grid;
       grid-auto-flow: row;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
+      // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
       transition: all 0.3s ease-in-out;
       min-width: 320px;
       min-height: 200px;
@@ -123,7 +129,9 @@
         }
       }
       &:hover {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+        // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+        // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
         // filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.3));
       }
     }
@@ -169,7 +177,9 @@
   .card-writers{
     transition: all 0.3s ease-in-out;
     display: block;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    // box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
+    // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
     border-radius: 4px;
     background: $ubatuba--30;
     justify-content: center;
@@ -272,7 +282,9 @@
     width: 150px;
     height: 150px;
     transition: all 3.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    // box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
+    // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
     // filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.3));
 
   }

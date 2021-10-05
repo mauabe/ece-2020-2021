@@ -34,7 +34,6 @@
         object-position: 50% 50%;
         object-fit: cover;
         overflow: hidden;
-        // background: rgb(65,42,64);
       }
       /* The overlay effect - lays on top of the container and over the image */
       .overlay {
@@ -44,13 +43,11 @@
         width: 100%;
         background: rgb(99,62,84);
         background: linear-gradient(rgba(108, 76, 185, 0.7), rgba(92, 65, 126, 0.7));
-        // color: #f1f1f1;
-        // z-index: 20;
-        transition: all .5s ease-in-out;
+
+        transition: all .3s ease-in-out;
         opacity:0.5;
 
         &:hover {
-          // opacity: 1;
           background: linear-gradient(rgba(108, 76, 185, 0.5), rgba(92, 65, 126, 0.5));
         }
       }
@@ -82,17 +79,16 @@
 
       .author-frame{
         flex: 0 0 auto;
-        // position: absolute;
         width: 9rem;
         height: 9rem;
         overflow: hidden;
         background-color: $white;
         border: 1px solid $ivy;
         border-radius: 4px;
-        filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.2));
-        margin: 0 2rem 0 0 ;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
+        margin: 0 2rem 0 2px ;
         margin-right: 4rem;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.1s ease-in-out;
 
         img.author{
           height: 100%;
@@ -101,7 +97,7 @@
         }
 
         &:hover{
-          filter: grayscale(.1) drop-shadow(6px 6px 10px rgba(0,0,0,0.3));
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 5px rgba(0, 0, 0, 0.50);
         }
       }
 
