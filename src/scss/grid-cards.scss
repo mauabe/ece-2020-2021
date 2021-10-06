@@ -33,10 +33,9 @@
     grid-gap: 1.5em;
     text-indent: 0;
 
-    .card {
-      // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+
+    .card{
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
-      // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
       transition: all 0.3s ease-in-out;
       min-width: 320px;
       min-height: 300px;
@@ -95,8 +94,6 @@
 
       &:hover {
         transition: all 0.3s ease-in-out;
-        // box-shadow: 0 4px 12px 0 rgba(0,0,0,0.5);
-        // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
         box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
       }
     }
@@ -104,9 +101,7 @@
     .card-partner{
       display: grid;
       grid-auto-flow: row;
-      // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
-      // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
       transition: all 0.3s ease-in-out;
       min-width: 320px;
       min-height: 200px;
@@ -128,11 +123,15 @@
           object-fit: cover;
         }
       }
+
+      .itoh{
+        display: grid;
+        grid-gap: 3em;
+        grid-template-columns: 1fr 1fr;
+      }
+
       &:hover {
-        // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-        // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
         box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
-        // filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.3));
       }
     }
 
@@ -177,9 +176,7 @@
   .card-writers{
     transition: all 0.3s ease-in-out;
     display: block;
-    // box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
-    // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
     border-radius: 4px;
     background: $ubatuba--30;
     justify-content: center;
@@ -238,7 +235,8 @@
     margin-bottom: 0.8em;
   }
 
-  li{
+  li,
+  .card-bottom > p{
     font-family: 'Oswald', sans-serif;
     font-weight: 300  ;
     text-align: left;
@@ -282,31 +280,13 @@
     width: 150px;
     height: 150px;
     transition: all 3.3s ease;
-    // box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
-    // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
-    // filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.3));
-
   }
 
   .card.book{
     object-position: 50% 50%;
     transition: all 0.3s ease-in-out;
   }
-
-  // .card.book:hover{
-  //   position: relative;
-  //   // position: absolute;
-  //   .frame-prof-book{
-  //     position: absolute;
-  //     display: block;
-  //     overflow: hidden;
-  //     img.card-prof-book{
-  //       object-fit: cover;
-  //       object-position: 50% 50%;
-  //     }
-  //   }
-  // }
 
   div.card-name{
     font-family: 'Grand Hotel', sans-serif;
