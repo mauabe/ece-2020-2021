@@ -33,8 +33,8 @@
     grid-gap: 1.5em;
     text-indent: 0;
 
-
-    .card{
+    .card,
+    .card-text{
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
       transition: all 0.3s ease-in-out;
       min-width: 320px;
@@ -78,11 +78,11 @@
       }
 
       img.logo-pic{
-        border: 0px ;
-        margin:0.4em;
+        border: 1px solid black  ;
+        margin:0.4rem;
         background-color: white;
         width: 95%;
-        height: 190px;
+        max-height: 190px;
         object-fit: contain;
         object-position: 50% 50%;
         justify-self: center;
@@ -95,6 +95,16 @@
       &:hover {
         transition: all 0.3s ease-in-out;
         box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
+      }
+
+    }
+    .card-text{
+      border: 0px solid transparent;
+      background: transparent;
+
+      img.logo-pic{
+        justify-items: center;
+        margin: 0 auto;
       }
     }
 
