@@ -15,7 +15,7 @@ class Story extends Component{
 
   render (){
     return(
-      <div><h2>There is nothing here.</h2> This content is not available.</div>
+      <div><h3>There is nothing here.</h3> This content is not available.</div>
     )
   }
 
