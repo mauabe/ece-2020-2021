@@ -79,8 +79,8 @@
     grid-template-columns: 1fr;
     text-indent: 0;
     overflow: hidden;
-    width: 450px;
-    height: 550px;
+    max-width: 450px;
+    max-height: 550px;
 
     img{
       width: 450px;
@@ -90,31 +90,21 @@
     }
   }
 
-  .student-centers{
-    display: grid;
-    grid-template-columns: 1fr;
+  //page speciffic css
+
+  .student-center-frame{
     text-indent: 0;
     overflow: hidden;
-    width: 650px;
-    height: 550px;
+    max-width: 650px;
+    max-height: 550px;
     // object-fit: cover;
 
     img{
       // width: 450px;
       height: 210px;
       object-position: 50% 50%;
-      object-fit: contain;
-      margin: 0 1em;
+      object-fit: cover;
     }
-  }
-  .spacer{
-    height: 1em;
-    margin: 1em 0;
-  }
-
-  //page speciffic css
-  .hkn{
-    margin-bottom: 1.5em;
   }
 
   img.full-width-img {
@@ -142,15 +132,11 @@
       overflow: hidden;
       margin-bottom: 0.4em;
       transition: all 0.3s;
-      // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
-      // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.50);
-      border-radius: 2px;
+      border-radius: $border-radius-half;
       border: 1px solid  $ivy;
     }
     img.fac:hover{
-      // box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
-      // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.30);
     }
   }
@@ -175,21 +161,19 @@
       text-indent: 0;
       text-align: left;
 
-      img.center-logo{
+      img.research-logo{
         background-color: white;
-        // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
         box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
-        // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.50);
         transition: all 0.3s ease-in-out;
         width: 250px;
         height: 250px;
-        border-radius: 2px;
+        border-radius: $border-radius-half;
         object-fit: cover;
         object-position: 50% 50%;
         margin: 0 3em 1em 0;
         overflow: hidden;
       }
-      .center-name{
+      .research-name{
         font-family: 'Oswald', sans-serif;
         font-weight: 500;
         font-size: 1.1em;
@@ -197,7 +181,7 @@
         text-indent: 0;
         text-align: left;
       }
-      .center-prof{
+      .research-prof{
         font-family: 'Oswald', sans-serif;
         font-weight: 300;
         font-size: 0.9em;
@@ -207,9 +191,7 @@
       }
 
       &:hover{
-        img.center-logo{
-          // box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
-          // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
+        img.research-logo{
           box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.40);
         }
       }

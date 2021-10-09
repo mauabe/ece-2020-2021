@@ -1,5 +1,8 @@
 $val: 1;
 $values: 0 0 100px;
+$border-radius: 4px;
+$border-radius-half: 2px;
+
 $color-default: #F0F3F2;
 $badass: #BADA55;
 $darkblue: #282c34;
@@ -28,7 +31,7 @@ $ivy--30: rgba(78, 91, 74, .3);
 $ivy--50: rgba(78, 91, 74, .5);
 $ivy--60: rgba(78, 91, 74, .6);
 $ivy--70: rgba(78, 91, 74, .7);
-$princess: #d07316;
+$orange2: #d07316;
 $peacock: #364d4b;
 $peacock--30: rgba(54, 77, 75, .3);
 $peacock--50: rgba(54, 77, 75, .5);
@@ -84,10 +87,7 @@ $greyverylight: #e8e7e7;
 $cardtop: #b8c0b6;
 $cardbottom: #e1dfdb;
 $cardbottom2: #d6d5d2;
-
 $contentarea: #c9c9c2;
-
-
 
 // beige with transparency
 $beige-light--10: rgba(208, 209, 205, .1);
