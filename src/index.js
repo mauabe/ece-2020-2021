@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import {Router} from 'react-router';
 import {createBrowserHistory} from "history";
 
-const history = createBrowserHistory({basename: '/2020-2021/temp'});
+const history = createBrowserHistory({basename: '/2020-2021/'});
 
 ReactDOM.render(
   <Router history={history} >

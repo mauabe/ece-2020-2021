@@ -184,7 +184,7 @@ export const articlesHighlights = [
     articleCaption2: '',
     articleCaption3: '',
     articleAuthor: 'Distinguished Prof. Yahya Rahmat-Samii',
-    textCopy: '<p  style="text-indent:0;"><span class="first-letter"> Yahya Rahmat-Samii, </span> distinguished professor and Northrop Grumman Professor of Electrical Engineering and Electromagnetics, won the <span>2020 Spacecraft Structures Best Paper Award </span> from the American Institute of Aeronautics and Astronautics. The institute recognized Rahmat-Samii and his co-authors from NASA’s Jet Propulsion Laboratory for their paper “Integration, Test, and On-Orbit Operation of a Ka-band Parabolic Deployable Antenna (KaPDA) for CubeSats.”</p><p>   Rahmat-Samii and his JPL colleagues were able to enhance CubeSat communication capabilities using their research on the Ka-band parabolic deployable antenna, a new technology that was the subject of their award-winning paper. The antenna design was a key technology for the RainCube mission, which was launched in May 2018.</p><p>   Rahmat-Samii\'s research at the UCLA Samueli School of Engineering focuses on electromagnetics, satellite and personal communication antennas, biotelemetry and radio-frequency identification applications, and antennas for remote sensing and radio astronomy applications. He is the director of the Antenna Research, Analysis and Measurement Laboratory at UCLA.  </p>'
+    textCopy: '<p  style="text-indent:0;"><span class="first-letter"> Yahya Rahmat-Samii, </span> distinguished professor and Northrop Grumman Professor of Electrical Engineering and , won the <span>2020 Spacecraft Structures Best Paper Award </span> from the American Institute of Aeronautics and Astronautics. The institute recognized Rahmat-Samii and his co-authors from NASA’s Jet Propulsion Laboratory for their paper “Integration, Test, and On-Orbit Operation of a Ka-band Parabolic Deployable Antenna (KaPDA) for CubeSats.”</p><p>   Rahmat-Samii and his JPL colleagues were able to enhance CubeSat communication capabilities using their research on the Ka-band parabolic deployable antenna, a new technology that was the subject of their award-winning paper. The antenna design was a key technology for the RainCube mission, which was launched in May 2018.</p><p>   Rahmat-Samii\'s research at the UCLA Samueli School of Engineering focuses on , satellite and personal communication antennas, biotelemetry and radio-frequency identification applications, and antennas for remote sensing and radio astronomy applications. He is the director of the Antenna Research, Analysis and Measurement Laboratory at UCLA.  </p>'
   },
   {
     articleId: 'clarivate',
@@ -206,7 +206,7 @@ export const articlesHighlights = [
     articleImageAltText4: '',
     articleImageAltText5: '',
     articleImageAltText6: '',
-    articleImageMain: 'https://source.unsplash.com/8bghKxNU1j0/1500x1500',
+    articleImageMain: 'https://source.unsplash.com/hpjSkU2UYSU/1500x1500',
     articleImageAltTextMain: 'Professors Aydogan Ozcan and Kang Wang',
     articleImageProf: '/img/Ozcan_Aydogan.jpg',
     articleImageAltTextProf: 'Professors Aydogan Ozcan and Kang Wang',
