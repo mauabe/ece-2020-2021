@@ -71,11 +71,9 @@ tr.sub-total{
 .table-overview {
   overflow-y: auto; //responsive
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: $border-radius-half;
   align-items: start;
-  // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.20);
-  // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.50);
   transition: all 0.3s;
   min-width: 350px;
   height: auto;
@@ -86,8 +84,6 @@ ul, li, .card-bottom{
   background-color: transparent;
 }
 
-.spacer{
-  margin: 1em 0;
-}
+
 
 @import "./grid-cards.scss";

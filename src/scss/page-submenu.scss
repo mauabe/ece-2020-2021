@@ -9,7 +9,7 @@
   justify-content: space-evenly;
   align-content: flex-start;
   margin: 0 12% 0 12%;
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0; //top box with rounded top corners
   background: $ubatuba--70;
   background-image:  url("../assets/images/overlay.png");
   border-bottom: 4px dashed $ivy;
@@ -30,7 +30,7 @@
         overflow: hidden;
         background-color: $white;
         border: 1px solid $ivy;
-        border-radius: 3px;
+        border-radius: $border-radius;
         filter: grayscale(0.8);
         margin: 10px;
 
