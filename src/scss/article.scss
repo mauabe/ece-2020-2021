@@ -170,114 +170,103 @@
     }
   }
 
-.picture-area.pict-area{
-  display: grid;
-  padding: 2em;
-  grid-template-columns: 1fr;
-
-  .row {
+  .picture-area.pict-area{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    object-fit: cover;
+    padding: 2em;
+    grid-template-columns: 1fr;
 
-    img.articleImageLeft {
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       object-fit: cover;
-      object-position: 50% 50%;
-      width: 100%;
-      height: 280px;
-      overflow: hidden;
-    }
-    img.articleImageRight {
-      object-fit: cover;
-      object-position: 50% 50%;
-      width: 100%;
-      height: 280px;
-      overflow: hidden;
-    }
 
-    img.articleImageLeft.none{
-      display: none;
-      max-height: 10px;
+      img.articleImageLeft {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+      }
+      img.articleImageRight {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+      }
+
+      img.articleImageLeft.none{
+        display: none;
+        max-height: 10px;
+      }
     }
   }
-}
 
-.caption{
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 1em;
-  padding: 1em ;
-  // margin-bottom: 1em;
-}
-.caption-none{
-  padding: 0em ;
-  display: none;
-}
-.credits{
-  padding: 1rem;
-  // margin: 1.5rem;
-
-  .image-credits,
-  .author-credits{
+  .caption{
     font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: .8em;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 1em ;
+    // margin-bottom: 1em;
   }
-}
+  .caption-none{
+    padding: 0em ;
+    display: none;
+  }
+  .credits{
+    padding: 1rem;
+    // margin: 1.5rem;
 
-.picture-area.none{
-  display: none;
-}
+    .image-credits,
+    .author-credits{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+      font-size: .8em;
+    }
+  }
 
+  .picture-area.none{
+    display: none;
+  }
+  .full-width {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+  }
+
+  .twocolumns{
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    align-content: start;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  .half{
+    display: flex;
+    flex: 1 1 50%;
+    align-content: flex-start;
+  }
+  .link, a.link{
+    font-family: 'Libre Caslon Text', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9em;
+    color: $black-80;
+    transition: all .3s ease-in-out;
+    margin: 0 .3em;
+    cursor: pointer;
+
+    &:hover{
+      color: $berry;
+    }
+  }
 }  //end or article
-
-img.none {
-  display: none;
-}
-.none {
-  display: none;
-}
-
-.link, a.link{
-  font-family: 'Libre Caslon Text', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 0.9em;
-  color: $black-80;
-  transition: all .3s ease-in-out;
-  margin: 0 .3em;
-  cursor: pointer;
-
-  &:hover{
-    color: $berry;
-  }
-}
-
-.full-width {
-	left: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
-	max-width: 100vw;
-	position: relative;
-	right: 50%;
-	width: 100vw;
-}
-
-.twocolumns{
-  display: grid;
-  grid-gap: 3em;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-  align-content: start;
-  justify-content: space-between;
-  margin-bottom: 1em;
-
-}
-.half{
-  display: flex;
-  flex: 1 1 50%;
-  align-content: start;
-}
 
 
 //additional CSS for spcific pages:
@@ -286,12 +275,6 @@ img.none {
   width: 100%;
 }
 
-.grid-cards{
-  display: grid;
-  grid-gap: 3em;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-}
 .piechart{
   max-width: 100%;
   margin: 1em 0 1em 0;
@@ -303,14 +286,9 @@ img.none {
     margin-left: 8%;
     margin-right: 8%;
   }
-  // .author{
-  //   margin-top: 2em;
-  //   margin-bottom: 1em;
-  //   left: 50%;
-  //   right: 50%;
-  // }
+
   .headline-lead{
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .article-headline{
     font-size: 1.8rem;
@@ -329,11 +307,9 @@ img.none {
 
   .picture-area, .pict-area{
     display: block;
-    // margin: auto;
     .row{
       display: block;
       align-items: center;
-      // margin: 1em auto 1em auto;
     }
   }
 

@@ -101,9 +101,9 @@
 
     img{
       // width: 450px;
-      height: 210px;
+      height: 250px;
       object-position: 50% 50%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 

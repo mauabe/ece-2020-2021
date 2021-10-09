@@ -55,7 +55,7 @@ export const articlesFaculty = [
     articleImageAltText4: '',
     articleImageAltText5: '',
     articleImageAltText6: '',
-    articleImageMain: 'https://source.unsplash.com/Mswc32f91uo/1500x1500',
+    articleImageMain: '/2020-2021/img/red-waves.jpg',
     articleImageAltTextMain: 'Physical and Wave Electronics',
     articleImageProf: '/img/ethanwang.jpg',
     articleImageAltTextProf: 'Physical and Wave Electronics - Y. Ethan Wang',
