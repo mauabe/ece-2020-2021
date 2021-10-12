@@ -12,7 +12,7 @@
   flex-direction: column;
   margin: 0 12% 2em 12%;
   background: $sweetleaf--30;
-  background-image:  url("../assets/images/overlay.png");
+  // background-image:  url("../assets/images/overlay.png");
   overflow: hidden;
 
   .article-content{
@@ -42,13 +42,13 @@
         height: 180px;
         width: 100%;
         background: rgb(99,62,84);
-        background: linear-gradient(rgba(108, 76, 185, 0.7), rgba(92, 65, 126, 0.7));
+        background: linear-gradient(rgba(58, 76, 105, 0.7), rgba(52, 65, 105, 0.7));
 
         transition: all .3s ease-in-out;
         opacity:0.5;
 
         &:hover {
-          background: linear-gradient(rgba(108, 76, 185, 0.5), rgba(92, 65, 126, 0.5));
+          background: linear-gradient(rgba(58, 76, 105, 0.5), rgba(52, 65, 105, 0.5));
         }
       }
     }  //end container
@@ -324,6 +324,10 @@
 /* Medium screens */
 
 @media only screen and (max-width: 950px) {
+  .article {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
   .picture-area.pict-area{
     display: block;
     // margin: auto;
@@ -337,8 +341,8 @@
 
 @media only screen and (max-width: 650px) {
   .article {
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 

@@ -103,8 +103,8 @@ function Panel({ panel, offset }) {
 
 
 function Home() {
-  const [state, dispatch] = React.useReducer(panelReducer, initialState);
-  console.log('home state', state)
+  const [state] = React.useReducer(panelReducer, initialState);
+  // console.log('home state', state)
 
   return(
     <div className="content-area">
