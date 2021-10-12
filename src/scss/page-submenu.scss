@@ -85,17 +85,22 @@
     }
   } //end bubble-link
 
-  @media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 1200px) {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     // flex-direction: column;
     margin: 0 8% -2px 8%;
-    // .author{
-    //   margin-top: 2em;
-    //   margin-bottom: 1em;
-    //   left: 50%;
-    //   right: 50%;
-    // }
+   }
+  /* Medium screens */
+  @media only screen and (max-width: 950px) {
+    margin-left: 8%;
+    margin-right: 8%;
+
+  }
+
+  @media only screen and (max-width: 650px) {
+      margin-left: 2%;
+      margin-right: 2%;
   }
 }
