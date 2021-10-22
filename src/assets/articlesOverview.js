@@ -134,11 +134,11 @@ export const articlesOverview = [
 
   {
     articleId: 'enrollment',
-    bubbleTextOne: 'Student Enrollment,',
-    bubbleTextTwo: ' Graduation and ',
-    bubbleTextThree: 'Admission',
+    bubbleTextOne: 'Student',
+    bubbleTextTwo: 'Enrollment and',
+    bubbleTextThree: 'Graduation',
     articleHeadlineOne:'ECE Student',
-    articleHeadlineTwo:'Enrollment, Graduation and Admission',
+    articleHeadlineTwo:'Enrollment and Graduation',
     articleHeadlineThree: '',
     articleCallout1: '',
     articleCallout2: '',
@@ -163,7 +163,41 @@ export const articlesOverview = [
     articleCaption1: '',
     articleCaption2: '',
     articleCaption3: '',
-    textCopy: '    <div class="grid-cards enrollment"> <h3 class="page-title">Student Enrollment</h3> <div class="card-deck"> <div class="table-overview"> <table id="fall-undergrad"> <thead> <tr class="t-head-row"> <th  colspan="2">Fall 2019 Undergraduate Students</th> </tr></thead> <tbody> <tr> <td>Students Enrolled</td><td>670</td></tr><tr> <td>Applicants</td><td>2905</td></tr><tr> <td>Admitted</td><td>390</td></tr><tr> <td>New Students Enrolled</td><td>168</td><!-- </tr><tr> <td>Median Incoming GPA</td><td>3.71</td></tr>--> </tbody> <tfoot> <tr> <td></td><td></td></tr></tfoot> </table> </div><div><div class="table-overview"> <table id="fall-grad"> <thead> <tr class="t-head-row"> <th colspan="2">Fall 2019 Graduate Students</th>  </tr></thead> <tbody> <tr> <td>Students Enrolled</td><td>482</td></tr><tr> <td>Applicants</td><td>1864</td></tr><tr> <td>Admitted</td><td>522</td></tr><tr> <td>New Students Enrolled</td><td>180</td></tr><!-- <tr> <td>Average Incoming GPA (weighted)</td><td>4.521</td></tr><tr> <td>Average Incoming GPA (unweighted)</td><td>3.951</td></tr>--> </tbody> <tfoot> <tr> <td></td><td></td></tr></tfoot> </table> </div></div></div></div><div class="spacer"><img src="/img/pixel.png"></div><div class="grid-cards degreesconferred"> <h3 class="page-title">Degrees Conferred in 2020-2021</h3> <div class="card-deck"> <div class="table-overview"> <table id="degree-bs"> <thead> <tr class="t-head-row"> <th>Bachelor of Sciences</th> <th></th> </tr></thead> <tbody> <tr> <td>Summer 2019</td><td>8</td></tr><tr> <td>Fall 2019</td><td>19</td></tr><tr> <td>Winter 2020</td><td>32</td></tr><tr> <td>Spring 2020</td><td>109</td></tr><tr class="t-total"> <td>Total:</td><td>168</td></tr></tbody> <tfoot> <tr> <td></td><td></td></tr></tfoot> </table> </div><div class="table-overview"> <table id="degree-ms"> <thead> <tr class="t-head-row"> <th>Master of Sciences</th> <th></th> </tr></thead> <tbody> <tr> <td>Summer 2019</td><td>3</td></tr><tr> <td>Fall 2019</td><td>24</td></tr><tr> <td>Winter 2020</td><td>38</td></tr><tr> <td>Spring 2020</td><td>49</td></tr><tr class="t-total"> <td>Total:</td><td>114</td></tr></tbody> <tfoot> <tr> <td></td><td></td></tr></tfoot> </table> </div><div class="table-overview"> <table id="degree-phd"> <thead> <tr class="t-head-row"> <th>Ph.D.</th> <th></th> </tr></thead> <tbody> <tr> <td>Summer 2019</td><td>10</td></tr><tr> <td>Fall 2019</td><td>9</td></tr><tr> <td>Winter 2020</td><td>4</td></tr><tr> <td>Spring 2020</td><td>14</td></tr><tr class="t-total"> <td>Total:</td><td>37</td></tr></tbody> <tfoot> <tr> <td></td><td></td></tr></tfoot> </table> </div></div></div><div class="spacer"><img src="/img/pixel.png"></div><div class="grid-cards applicants"> <h3 class="page-title">Graduate Applicants and Admitted - Fall 2019</h3> <div class="card-deck "> <div> <div class="table-overview"> <table id="faculty"> <thead> <tr class="t-head-row"> <th>Graduate Applicants</th> <th></th> </tr></thead> <tbody> <tr> <td>China</td><td>943</td></tr><tr> <td>USA</td><td>244</td></tr><tr> <td>India</td><td>343</td></tr><tr> <td>Taiwan</td><td>111</td></tr><tr> <td>South Korea</td><td>47</td></tr><tr> <td>Iran</td><td>35</td></tr><tr> <td>Other</td><td>144</td></tr><tr class="t-total"> <td>Total:</td><td>1867</td></tr></tbody> <tfoot> <tr> <td></td><td></td></tr></tfoot> </table> </div></div><div class="table-overview"> <table id="faculty"> <thead> <tr class="t-head-row"> <th  colspan="2">Graduate Students Admitted </th>  </tr></thead> <tbody> <tr class="sub-head"> <td>Circuits and Embedded Systems</td><td></td></tr><tr> <td>Admitted</td><td>162</td></tr><tr> <td>Rejected</td><td>447</td></tr><tr> <td>Admission Rate</td><td>27%</td></tr><tr class="sub-total"> <td>Total Applicants</td><td>609</td></tr><tr class="sub-head"> <td>Physical and Wave Electronics</td><td></td></tr><tr> <td>Admitted</td><td>154</td></tr><tr> <td>Rejected</td><td>220</td></tr><tr> <td>Admission Rate</td><td>41%</td></tr><tr class="sub-total"> <td>Total Applicants</td><td>374</td></tr><tr class="sub-head"> <td>Signals and Systems</td><td></td></tr><tr> <td>Admitted</td><td>208</td></tr><tr> <td>Not Admitted</td><td>676</td></tr><tr> <td>Admission Rate</td><td>23%</td></tr><tr class="sub-total"> <td>Total Applicants</td><td>884</td></tr><tr class="t-total"> <td>Total Applicants for Fall 2019</td><td>1867</td></tr></tbody> <tfoot> <tr> <td></td><td></td></tr></tfoot> </table> </div></div></div><div class="spacer"><img src="/img/pixel.png"></div>'
+    textCopy: ' <div class="grid-cards enrollment"><h3 class="page-title">Student Enrollment</h3><div class="card-deck"><div class="table-overview"><table id="fall-undergrad"><thead><tr class="t-head-row"><th colspan="6">Fall 2020 Undergraduate</th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Students Enrolled</td><td></td><td></td><td></td><td></td><td>476</td></tr><tr><td>Applicants</td><td>Freshman CE 1441</td><td>Freshman EE 1650</td><td>Transfer CE 207</td><td>Transfer EE 339</td><td>Total 3637</td></tr><tr><td>Admitted</td><td>Freshman CE 34</td><td>Freshman EE 240</td><td>Transfer CE 13</td><td>Transfer EE 115</td><td>Total 402</td></tr><tr><td>Intent to Register</td><td>Freshman CE 16</td><td>Freshman EE 85</td><td>Transfer CE 9</td><td>Transfer EE 68</td><td>Total 178</td></tr><tr><td>New Students Enrolled</td><td>Freshman CE 16</td><td>Freshman EE 85</td><td>Transfer CE 8</td><td>Transfer EE 67</td><td>Total 176</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div><div class="table-overview"><table id="fall-grad"><thead><tr class="t-head-row"><th colspan="4">Fall 2020 Graduate</th></tr></thead><tbody><tr><td>Students Enrolled</td><td>MS 2380</td><td>PhD 242</td><td>Total 480</td></tr><tr><td>Applicants</td><td>MS 1322</td><td>PhD 527</td><td>Total 1849</td></tr><tr><td>Admitted</td><td>MS 512</td><td>PhD 63</td><td>Total 575</td></tr><tr><td>Intent to Register</td><td>MS 114</td><td>PhD 30</td><td>Total 144</td></tr><tr><td>New Students Enrolled</td><td>MS 94</td><td>PhD 27</td><td>Total 121</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="spacer"><img src="/img/pixel.png"></div><div class="grid-cards degreesconferred"><h3 class="page-title">Degrees Conferred in 2020-2021</h3><div class="card-deck"><div class="table-overview"><table id="degree-bs"><thead><tr class="t-head-row"><th>Bachelor of Sciences</th><th></th></tr></thead><tbody><tr><td>Summer 2020</td><td>7</td></tr><tr><td>Fall 2020</td><td>13</td></tr><tr><td>Winter 2021</td><td>22</td></tr><tr><td>Spring 2021</td><td>130</td></tr><tr class="t-total"><td>Total:</td><td>172</td></tr></tbody><tfoot><tr><td></td><td></td></tr></tfoot></table></div><div class="table-overview"><table id="degree-ms"><thead><tr class="t-head-row"><th>Master of Sciences</th><th></th></tr></thead><tbody><tr><td>Summer 2020</td><td>5</td></tr><tr><td>Fall 2020</td><td>50</td></tr><tr><td>Winter 2021</td><td>45</td></tr><tr><td>Spring 2021</td><td>63</td></tr><tr class="t-total"><td>Total:</td><td>163</td></tr></tbody><tfoot><tr><td></td><td></td></tr></tfoot></table></div><div class="table-overview"><table id="degree-ms"><thead><tr class="t-head-row"><th>Master of Engineering</th><th></th></tr></thead><tbody><tr><td>Summer 2020</td><td>1</td></tr><tr><td>Fall 2020</td><td>-</td></tr><tr><td>Winter 2021</td><td>-</td></tr><tr><td>Spring 2021</td><td>-</td></tr><tr class="t-total"><td>Total:</td><td>1</td></tr></tbody><tfoot><tr><td></td><td></td></tr></tfoot></table></div><div class="table-overview"><table id="degree-phd"><thead><tr class="t-head-row"><th>Ph.D.</th><th></th></tr></thead><tbody><tr><td>Summer 2019</td><td>5</td></tr><tr><td>Fall 2019</td><td>13</td></tr><tr><td>Winter 2020</td><td>4</td></tr><tr><td>Spring 2020</td><td>13</td></tr><tr class="t-total"><td>Total:</td><td>34</td></tr></tbody><tfoot><tr><td></td><td></td></tr></tfoot></table></div></div></div> '
+
+  },
+  {
+    articleId: 'enrollment',
+    bubbleTextOne: 'Graduate',
+    bubbleTextTwo: 'Student',
+    bubbleTextThree: 'Admission',
+    articleHeadlineOne:'ECE Student',
+    articleHeadlineTwo:'Graduate Student Admission',
+    articleHeadlineThree: '',
+    articleCallout1: '',
+    articleCallout2: '',
+    articleImage1: '',
+    articleImage2:'',
+    articleImage3: '',
+    articleImage4:'',
+    articleImage5: '',
+    articleImage6: '',
+    articleImageAltText1: '',
+    articleImageAltText2: '',
+    articleImageAltText3: '',
+    articleImageAltText4: '',
+    articleImageAltText5: '',
+    articleImageAltText6: '',
+    articleImageMain:   'https://source.unsplash.com/6dDHofabCQ8/1500x1500',
+    articleImageAltTextMain: 'UCLA students enrollment',
+    articleImageProf: '/img/Engineering-V_041.jpg',
+    articleImageAltTextProf: 'Department Overview ',
+    articleImageCred: '',
+    articleAuthor: '',
+    articleCaption1: '',
+    articleCaption2: '',
+    articleCaption3: '',
+    textCopy: '  <div class="grid-cards applicants"><h3 class="page-title">Graduate Applicants and Admitted - Fall 2020</h3><div class="card-deck"><div><div class="table-overview"><table id="faculty"><thead><tr class="t-head-row"><th>Graduate Applicants</th><th></th></tr></thead><tbody><tr><td>China</td><td>967</td></tr><tr><td>India</td><td>351</td></tr><tr><td>USA</td><td>246</td></tr><tr><td>Taiwan</td><td>114</td></tr><tr><td>South Korea</td><td>30</td></tr><tr><td>Iran</td><td>17</td></tr><tr><td>Other</td><td>128</td></tr><tr class="t-total"><td>Total:</td><td>1853</td></tr></tbody><tfoot><tr><td></td><td></td></tr></tfoot></table></div></div><div class="table-overview"><table id="faculty"><thead><tr class="t-head-row"><th colspan="2">Graduate Students Admitted</th></tr></thead><tbody><tr class="sub-head"><td>Circuits and Embedded Systems</td><td></td></tr><tr><td>Admitted</td><td>198</td></tr><tr><td>Rejected</td><td>447</td></tr><tr><td>Admission Rate</td><td>29%</td></tr><tr class="sub-total"><td>Total Applicants</td><td>645</td></tr><tr class="sub-head"><td>Physical and Wave Electronics</td><td></td></tr><tr><td>Admitted</td><td>91</td></tr><tr><td>Rejected</td><td>220</td></tr><tr><td>Admission Rate</td><td>42%</td></tr><tr class="sub-total"><td>Total Applicants</td><td>311</td></tr><tr class="sub-head"><td>Signals and Systems</td><td></td></tr><tr><td>Admitted</td><td>216</td></tr><tr><td>Not Admitted</td><td>676</td></tr><tr><td>Admission Rate</td><td>24%</td></tr><tr class="sub-total"><td>Total Applicants</td><td>892</td></tr><tr class="t-total"><td>Total Applicants for Fall 2019</td><td>1867</td></tr></tbody><tfoot><tr><td></td><td></td></tr></tfoot></table></div></div></div><div class="spacer"><img src="/img/pixel.png"></div> '
 
   },
 
