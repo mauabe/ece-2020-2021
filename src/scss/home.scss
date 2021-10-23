@@ -16,6 +16,7 @@
     //   rotateY(calc(-45deg * var(--dir)));
 
   .panel{
+    font-size: 0.9rem;
     display: flex;
     flex: 1 1 100%;
     flex-direction: column;
@@ -26,24 +27,24 @@
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
-    filter: grayscale(0.8);
+    filter: grayscale(0.85);
     position: relative;
     transition:
       min-width 0.3s ease-in-out 0.3s,
-      opacity 0.3s ease-in-out 0.3s,
-      filter 0.3s ease-in-out 0.3s;
-      // font-size 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1),
-      // flex 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1);
+      opacity 0.5s ease-in-out 0.3s,
+      filter 0.3s ease-in-out 0.3s,
+      font-size 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1),
+      flex 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1);
 
     .panelContent {
       display: flex;
       flex-direction: column;
       flex: 1 1 100%;
       font-family:'Quattrocento Sans', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1.1em;
       top: 40%;
       position: absolute;
-      margin: 0 0.5rem 0 1rem;
+      margin: 0 0.5em 0 1em;
       align-items: flex-start;
       justify-items: center;
 
@@ -51,7 +52,7 @@
         display: flex;
         flex: 1 1 100%;
         font-family:'Quattrocento Sans', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.3em;
         letter-spacing: 0.1ch;
         text-shadow: 0 4px 6px rgba(0, 0, 0, 0.72);
         margin: 0;
@@ -62,9 +63,9 @@
         flex: 1 1 100%;
         // top: 50%;
         font-family:'Grand Hotel', cursive;
-        font-size: 2.2rem;
+        font-size: 2.0em;
         font-weight: 700;
-        margin: 0.2rem 0;
+        margin: 0.2em 0;
         text-shadow: 0 4px 10px rgba(0, 0, 0, 0.72);
         &:hover{
           color: $mercury;
@@ -74,11 +75,11 @@
         display: flex;
         line-height: 1.4;
         font-family:'Quattrocento Sans', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.3em;
         opacity: 0;
         margin: 0.7rem 0;
         text-shadow: 0 4px 6px rgba(0, 0, 0, 0.72);
-        padding: 0.5rem 4rem 0.5rem 0;
+        padding: 0.5em 4em 0.5em 0;
       }
 
     } //end panelContent
@@ -88,100 +89,90 @@
       bottom: 16%;
       font-family:'Quattrocento Sans', sans-serif;
       font-weight: 700;
-      font-size: 1rem;
-      width: 5rem;
-      height: 1.5rem;
+      font-size: 1em;
+      width: 5em;
+      height: 1.5em;
       opacity: 0;
       background-color: orange;
       position: absolute;
-      margin: 0 1rem;
-      padding: 0.5rem;
+      margin: 0 0.5em;
+      padding: 0.5em;
     }
 
 
     &:hover{
-      // transition: min-width 0.5s ease-in-out 0.5s;
-      filter: grayscale(0.1);
+      transition: filter 0.3s, min-width 0.3s ease-in-out 0.3s;
+      filter: grayscale(0.01);
       min-width: 14%;
-      // flex: 5;
 
-      // .panelTitle {
-      //   opacity: 1;
-      // }
       .panelText{
         transition: opacity 0.3s ease-in-out 0.3s;
         opacity: 1;
-        padding: 0.5rem 4rem 0.5rem 0;
+        padding: 0.5em 4em 0.5em 0;
 
       }
       .panelLinkButton {
-        transition: opacity 1.7s ease-in-out 0.3s;
+        transition: opacity 1.5s ease-in-out 0.3s;
         opacity: 1;
       }
 
     }
   } // end of .panel
 
-
-
+  @media only screen and (max-width: 1200px) {
+    .panel {
+      font-size: 0.8em;
+    };
+  }
+  @media only screen and (max-width: 950px) {
+    .panel {
+      font-size: 0.7em;
+    };
+  }
   // @media only screen and (max-width: 800px) {
-  //   display: block;
-  //   .panel p {
-  //     font-size: 1.1em;
-  //   };
+  //   .panelsContainer{
+  //     .panel {
+  //       font-size: 0.6em;
+  //     };
+  //   }
   // }
 } //end panelsContainer
 
-// @media only screen and (max-width: 650px) {
-//   .article {
-//     margin-left: 4%;
-//     margin-right: 4%;
-//   }
-// }
-
-  // .panel0 {
-  //   background-image: 'url(https://source.unsplash.com/6k2wkqGMw1I/1500x1500)';
-  // }
-  // .panel1 {
-  //   background-image: 'url(https://source.unsplash.com/13g9FZqVvNY/1500x1500)';
-  // }
-  // .panel2 {
-  //   background-image: 'url(https://source.unsplash.com/uNyF_FXn4qw/1500x1500)';
-  // }
-  // .panel3 {
-  //   background-image: 'url(https://source.unsplash.com/Xf071ws2Icg/1500x1500)';
-  // }
-  // .panel4 {
-  //   background-image: 'url(https://source.unsplash.com/wFW4zlulBT8/1500x1500)';
-  // }
-  // .panel5 {
-  //   background-image: 'url(https://source.unsplash.com/3cIPFNW3wog/1500x1500)';
-  // }
-  // .panel6 {
-  //   background-image: 'url(https://source.unsplash.com/KJ241ZAOYwU/1500x1500)';
-  // }
-  // .panel7 {
-  //   background-image: 'url(https://source.unsplash.com/Ljz_Wmk7t7g/1500x1500)';
-  // }
-
-
-
-
-// .panel[data-active] {
-  // z-index: 20;
-  // pointer-events: auto;
-
-  // .panelContainer {
-  //   --x: calc(var(--px) - 0.5);
-  //   --y: calc(var(--py) - 0.5);
-  //   opacity: 1;
-  //   transform: perspective(800px);
-
-  //   &:hover {
-  //     transition: transform 0.1s ease-in-out;
-  //     transform: perspective(1000px)
-  //       // rotateX(calc(var(--y) * -5deg))
-  //       rotateY(calc(var(--x) * 30deg));
-  //   }
-  // }
-// }
+@media only screen and (max-width: 800px) {
+  .panelsContainer{
+    flex-direction: column;
+    .panel {
+      flex-direction: row;
+      font-size: 0.6em;
+      min-width: 100%;
+      .panelContent {
+        flex-direction: row;
+        margin: 0 5em;
+        .panelTitle, .panelFirstName {
+          margin: 0 .5em;
+          width: 5em;
+        }
+        .panelName {
+          margin: 0 .5em;
+          min-width: 5em;
+        }
+        .panelText {
+          min-width: 18em;
+          margin: 0 2em 0 0;
+          opacity: 1;
+        }
+        .panelLinkButton {
+          opacity: 0;
+        }
+      }
+      &:hover{
+        transition: filter 0.3s ease-in-out 0.3s;
+        filter: grayscale(0.01);
+      }
+    }
+  }
+  .article {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}

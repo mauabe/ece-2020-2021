@@ -20,7 +20,7 @@
   .card-students,
   .card-dept{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: auto ;
     grid-gap: 1.5em;
     text-indent: 0;
@@ -133,7 +133,7 @@
 
     &.dept{
       // grid-template-columns: 1fr 1fr;
-      grid-template-columns: repeat(auto-fill, minmax(450px, 4fr));
+      grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
       grid-column-gap: 4.5em;
       grid-row-gap: 3.5em;
       max-width: 100%;

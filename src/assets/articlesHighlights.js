@@ -51,7 +51,7 @@ export const articlesHighlights = [
     articleImageAltText4: '',
     articleImageAltText5: '',
     articleImageAltText6: '',
-    articleImageMain: 'https://source.unsplash.com/13g9FZqVvNY/1500x1500',
+    articleImageMain: 'https://source.unsplash.com/RTJIXQNne68/1500x1500',
     articleImageAltTextMain: 'Professor Achuta Kadambi',
     articleImageProf: '/img/Achuta-Kadambi.jpg',
     articleImageAltTextProf: 'Professor Achuta Kadambi',
