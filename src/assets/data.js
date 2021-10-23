@@ -30,7 +30,7 @@ export const panels = [
     title: "Professor",
     firstname: "Suhas",
     name: "Diggavi",
-    text: "<div>Facebook </br>and Amazon </br>Research </br>Awards and </br>Guggenheim </br>Fellowship</div>",
+    text: "<div>Facebook and Amazon Research Awards and Guggenheim Fellowship</div>",
     linkCopy: "more",
     image: "https://source.unsplash.com/6k2wkqGMw1I/1500x1500",
     link: "highlights1"
@@ -40,10 +40,9 @@ export const panels = [
     title: "Professor",
     firstname: "Achuta",
     name: "Kadambi",
-    text: '<div></br>NSF </br>Career </br>Award </br>and </br>Featured </br>in </br>"Science </br> Journal"</div>',
+    text: '<div>NSF Career Awardand </br>Featured in "Science  Journal"</div>',
     linkCopy: "more",
     image: "https://source.unsplash.com/7FOSJVtUtac/1500x1500",
-    // image: "https://source.unsplash.com/RTJIXQNne68/1500x1500",
     link: "highlights2"
   },
   {
@@ -51,7 +50,7 @@ export const panels = [
     title: "Professor",
     firstname: "<div>Xiang </br>Anthony</div>",
     name: "Chen",
-    text: "<div> </br>NSF Career </br>and Young </br>Investigator </br>Awards</div>",
+    text: "<div>NSF Career and Young </br>Investigator Awards</div>",
     linkCopy: "more",
     image: "https://source.unsplash.com/uNyF_FXn4qw/1500x1500",
     link: "highlights3"
@@ -61,7 +60,7 @@ export const panels = [
     title: "Professor ",
     firstname: "Sam",
     name: "Emaminejad",
-    text: '<div>Research </br>Featured </br>on Cover </br> of "Lab </br>on a Chip"</div>',
+    text: '<div>Research Featured on Cover </br> of "Lab on a Chip"</div>',
     linkCopy: "more",
     image: "https://source.unsplash.com/Xf071ws2Icg/1500x1500",
     link: "highlights4"
@@ -71,7 +70,7 @@ export const panels = [
     title: "Professor",
     firstname: "Kang",
     name: "Wang",
-    text: "<div>NSF Grant </br>to Improve </br>Quantum </br>Computing </br>Chips</div>",
+    text: "<div>NSF Grant to Improve </br>Quantum Computing Chips</div>",
     linkCopy: "more",
     image: "https://source.unsplash.com/KJ241ZAOYwU/1500x1500",
     link: "highlights5"
@@ -81,7 +80,7 @@ export const panels = [
     title: "Professor",
     firstname: "<div>Yahya</div>",
     name: "Rahmat-Samii",
-    text: "<div> New Book</br> and</br> Best</br> Paper </br>Award</br>of AIAA</div>",
+    text: "<div> New Book and Best </br>Paper Award of AIAA</div>",
     linkCopy: "more",
     image: "https://source.unsplash.com/3cIPFNW3wog/1500x1500",
     link: "highlights6"
@@ -91,7 +90,7 @@ export const panels = [
     title: "Alumni ",
     firstname: "Adrian",
     name: "Tang",
-    text: "<div>Recognized </br>as 2021 </br>Outstanding </br>Young </br>Engineer by</br> IEEE MTT-S</div>",
+    text: "<div>Recognized as 2021 Outstanding </br>Young Engineer by IEEE MTT-S</div>",
     linkCopy: "more...",
     image: "https://source.unsplash.com/Hjez0AY_c4k/1500x1500",
     link: "news5"
@@ -101,7 +100,7 @@ export const panels = [
     title: "Alumna",
     firstname: "Kat",
     name: "Echazarreta ",
-    text: "<div>Inspiring </br>Others </br>through </br>Work at </br>NASA's JPL</div>",
+    text: "<div>Inspiring Others through Work at NASA's JPL</div>",
     linkCopy: "more...",
     image: "https://source.unsplash.com/Ljz_Wmk7t7g/1500x1500",
     link: "news6"
