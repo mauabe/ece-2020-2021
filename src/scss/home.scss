@@ -29,9 +29,9 @@
     filter: grayscale(0.8);
     position: relative;
     transition:
-      min-width 0.3s ease-in-out 0.3s,
+      min-width 0.4s ease-in-out 0.4s,
       opacity 0.3s ease-in-out 0.3s,
-      filter 0.3s ease-in-out 0.3s;
+      filter 0.4s ease-in-out 0.4s;
       // font-size 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1),
       // flex 0.7s cubic-bezier(0.6,-0.5, 0.7,-0.1);
 
@@ -100,14 +100,10 @@
 
 
     &:hover{
-      // transition: min-width 0.5s ease-in-out 0.5s;
+      transition: filter 0.3s, min-width 0.3s ease-in-out 0.3s;
       filter: grayscale(0.1);
       min-width: 14%;
-      // flex: 5;
 
-      // .panelTitle {
-      //   opacity: 1;
-      // }
       .panelText{
         transition: opacity 0.3s ease-in-out 0.3s;
         opacity: 1;
@@ -115,7 +111,7 @@
 
       }
       .panelLinkButton {
-        transition: opacity 1.7s ease-in-out 0.3s;
+        transition: opacity 1.5s ease-in-out 0.3s;
         opacity: 1;
       }
 
