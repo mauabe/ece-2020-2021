@@ -306,12 +306,16 @@
     margin-bottom: 2em;
   }
 
-  .picture-area, .pict-area{
-    display: block;
+  .picture-area.pict-area{
+      // display: block;
     .row{
-      display: block;
-      align-items: center;
+      grid-template-columns: 1fr;
+      // display: block;
+      // align-items: center;
     }
+  }
+  .row{
+    grid-template-columns: 1fr;
   }
 
   .twocolumns {
@@ -329,7 +333,7 @@
     margin-left: 8%;
     margin-right: 8%;
   }
-  .picture-area.pict-area{
+  .picture-area, .pict-area{
     display: block;
     // margin: auto;
     .row{
