@@ -339,6 +339,7 @@
     .row{
       display: block;
       align-items: center;
+      grid-template-columns: 1fr;
       // margin: 1em auto 1em auto;
     }
   }
