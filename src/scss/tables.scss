@@ -67,9 +67,8 @@ tr.sub-total{
   }
 }
 
-
 .table-overview {
-  overflow-y: auto; //responsive
+  overflow-y: scroll; //responsive
   background-color: transparent;
   border-radius: $border-radius-half;
   align-items: start;
@@ -79,11 +78,12 @@ tr.sub-total{
   height: auto;
   width: 100%;
 }
+.wider-table{
+  min-width: 650px;
+}
 
 ul, li, .card-bottom{
   background-color: transparent;
 }
-
-
 
 @import "./grid-cards.scss";
