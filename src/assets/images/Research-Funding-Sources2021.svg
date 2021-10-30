@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="705.6px"
-	 height="371px" viewBox="-52.8 0 705.6 371" enable-background="new -52.8 0 705.6 371" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="667.924px" height="371px" viewBox="-32.708 0 667.924 371" enable-background="new -32.708 0 667.924 371"
+	 xml:space="preserve">
 <g id="Layer_1">
 	<path fill="none" d="M-52.713,0h705.555v371H-52.713V0z"/>
 	<path fill="#375A84" d="M300,168.992c6.674,0,13.222,1.274,18.938,3.686v22.015c-5.717-2.411-12.265-3.686-18.938-3.686V168.992z"
@@ -75,26 +76,26 @@
 		<path fill="#9E9E9E" d="M359.006,283.745c0-1.104-0.896-2-2-2s-2,0.896-2,2s0.896,2,2,2S359.006,284.85,359.006,283.745"/>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 -17.5 87)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">DOE</text>
-		<text transform="matrix(1 0 0 1 -19 132.5)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">NASA</text>
-		<text transform="matrix(1 0 0 1 -17.5 181.5)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">NIH</text>
-		<text transform="matrix(1 0 0 1 -17.5 240)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">NSF</text>
-		<text transform="matrix(1 0 0 1 -18.2544 311.1602)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">Industry</text>
-		<text transform="matrix(1 0 0 1 554.748 309.5752)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">Air Force</text>
-		<text transform="matrix(1 0 0 1 561.3164 327.5752)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$2,743,963</text>
-		<text transform="matrix(1 0 0 1 568.6113 254)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$4,171,110</text>
-		<text transform="matrix(1 0 0 1 558.6816 194.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$3,660,047</text>
-		<text transform="matrix(1 0 0 1 560.5107 145)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$2,585,065</text>
-		<text transform="matrix(1 0 0 1 561.2402 107.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$2,935,378</text>
-		<text transform="matrix(1 0 0 1 -17.5 103.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$4,092,204</text>
-		<text transform="matrix(1 0 0 1 -17.5 148.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$335,469</text>
-		<text transform="matrix(1 0 0 1 -17 198.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$3,550,807</text>
-		<text transform="matrix(1 0 0 1 -16.5 256)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$6,734,526</text>
-		<text transform="matrix(1 0 0 1 -17.7544 331.1602)" fill="#646666" font-family="'Montserrat-Medium'" font-size="10">$3,197,729</text>
-		<text transform="matrix(1 0 0 1 583.4277 236.5)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">Navy</text>
-		<text transform="matrix(1 0 0 1 580.8477 177)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">Army</text>
-		<text transform="matrix(1 0 0 1 470.7383 76)"><tspan x="0" y="0" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">Other Federal, State,</tspan><tspan x="4.391" y="14.4" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">Foreign, Foundation</tspan></text>
-		<text transform="matrix(1 0 0 1 586.8008 129)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="12">DOD</text>
+		<text transform="matrix(1 0 0 1 -17.5 87)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">DOE</text>
+		<text transform="matrix(1 0 0 1 -19 132.5)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">NASA</text>
+		<text transform="matrix(1 0 0 1 -17.5 181.5)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">NIH</text>
+		<text transform="matrix(1 0 0 1 -17.5 240)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">NSF</text>
+		<text transform="matrix(1 0 0 1 -18.2544 311.1602)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">Industry</text>
+		<text transform="matrix(1 0 0 1 544.0801 309.5752)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">Air Force</text>
+		<text transform="matrix(1 0 0 1 549.8281 327.5752)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$2,743,963</text>
+		<text transform="matrix(1 0 0 1 558.7324 254)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$4,171,110</text>
+		<text transform="matrix(1 0 0 1 546.8174 194.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$3,660,047</text>
+		<text transform="matrix(1 0 0 1 549.0137 145)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$2,585,065</text>
+		<text transform="matrix(1 0 0 1 549.8887 108.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$2,935,378</text>
+		<text transform="matrix(1 0 0 1 -17.5 103.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$4,092,204</text>
+		<text transform="matrix(1 0 0 1 -17.5 148.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$335,469</text>
+		<text transform="matrix(1 0 0 1 -17 198.5)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$3,550,807</text>
+		<text transform="matrix(1 0 0 1 -16.5 256)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$6,734,526</text>
+		<text transform="matrix(1 0 0 1 -17.7544 331.1602)" fill="#646666" font-family="'Montserrat-Medium'" font-size="12">$3,197,729</text>
+		<text transform="matrix(1 0 0 1 577.666 236.5)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">Navy</text>
+		<text transform="matrix(1 0 0 1 574.6562 177)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">Army</text>
+		<text transform="matrix(1 0 0 1 446.1943 75)"><tspan x="0" y="0" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">Other Federal, State,</tspan><tspan x="5.124" y="16.8" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">Foreign, Foundation</tspan></text>
+		<text transform="matrix(1 0 0 1 581.6006 129)" fill="#463F3C" font-family="'Montserrat-Black'" font-size="14">DOD</text>
 	</g>
 	<g id="percent_4_">
 		<text transform="matrix(1 0 0 1 313.4805 119)" fill="#EAEBE6" font-family="'Montserrat-Black'" font-size="12">8.6%</text>
