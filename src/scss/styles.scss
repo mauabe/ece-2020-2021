@@ -75,7 +75,6 @@ textarea {
   margin: 0;
 }
 
-
 a{
   color: $black-40;
   text-decoration: none;
@@ -88,11 +87,8 @@ a{
   height: 100%;
   align-items: center;
   justify-content: center;
-  // background-color:red;
   background-color: $background;
   color: $peacock;
-  // color: blue;
-  // background-image:  url("../assets/images/overlay.png"), url("../assets/images/qbkls.png");
   background-image: url("../assets/images/qbkl.png");
   background-position: top left, center center;
   background-attachment: fixed, fixed;
@@ -104,7 +100,6 @@ a{
 .content-area, .page{
   display: flex;
   flex-direction: column;
-  // flex: 1 1 100%;
 }
 
 .spacer{
