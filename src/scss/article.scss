@@ -206,22 +206,21 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 1em;
-    padding: 1em ;
-    // margin-bottom: 1em;
+    padding: 1em 0 0 0 ;
   }
   .caption-none{
     padding: 0em ;
     display: none;
   }
   .credits{
-    padding: 1rem;
-    // margin: 1.5rem;
+    padding: 0 2em 2em 2em;
 
     .image-credits,
     .author-credits{
       font-family: 'Oswald', sans-serif;
       font-weight: 300;
       font-size: .8em;
+
     }
   }
 

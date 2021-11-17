@@ -84,24 +84,24 @@ class Article extends Component{
             <img src={`${articleImage1}`} alt={articleImageAltText1} title={articleImageAltText1} className={`articleImageLeft ${articleImage1Class}`} />
             <img src={`${articleImage2}`} alt={articleImageAltText2} title={articleImageAltText2} className={`articleImageRight ${articleImage2Class}`} />
           </div>
-          <p className={caption1ClassName}>{articleCaption1}</p>
+          <span className={caption1ClassName}>{articleCaption1}</span>
 
           <div className={`row ${row2ClassName}`}>
             <img src={`${articleImage3}`} alt={articleImageAltText3} title={articleImageAltText3} className={`articleImageLeft ${articleImage3Class}`} />
             <img src={`${articleImage4}`} alt={articleImageAltText4} title={articleImageAltText4} className={`articleImageRight ${articleImage4Class}`} />
           </div>
-          <p className={caption2ClassName}>{articleCaption2}</p>
+          <span className={caption2ClassName}>{articleCaption2}</span>
 
           <div className={`row ${row3ClassName}`}>
             <img src={`${articleImage5}`} alt={articleImageAltText5} title={articleImageAltText5} className={`articleImageLeft ${articleImage5Class}`} />
             <img src={`${articleImage6}`} alt={articleImageAltText6} title={articleImageAltText6} className={`articleImageRight ${articleImage6Class}`} />
           </div>
-          <p className={caption3ClassName}>{articleCaption3}</p>
+          <span className={caption3ClassName}>{articleCaption3}</span>
         </div>
 
         <div className={`${creditsClassName} ${articleId}`}>
-          <p className={imgCreditClassName}>{articleImageCred}</p>
-          <p className={authorCreditClassName}>{articleAuthor}</p>
+          <span className={imgCreditClassName}>{ReactHtmlParser(articleImageCred)}</span>
+          <span className={authorCreditClassName}>{ReactHtmlParser(articleAuthor)}</span>
         </div>
 
       </div>
