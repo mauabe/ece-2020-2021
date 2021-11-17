@@ -86,7 +86,7 @@ function Panel({ panel, offset }) {
         "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
       }}
     >
-      <BrowserRouter basename="/2020-2021/temp"/>
+      <BrowserRouter basename="/2020-2021"/>
         <div className="panelContent">
           <div className="panelTitle">{panel.title}</div>
           <div className="panelFirstName">{ReactHtmlParser(panel.firstname)}</div>
