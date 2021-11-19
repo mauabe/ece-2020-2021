@@ -81,18 +81,18 @@ function Panel({ panel, offset }) {
       ref={ref}
       data-active={active}
       style={{
-        backgroundImage: `url(${panel.image})`,
-        "--offset": offset,
-        "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
+        backgroundImage: `url(${panel.image})`
       }}
     >
       <BrowserRouter basename="/2020-2021"/>
         <div className="panelContent">
-          <div className="panelTitle">{panel.title}</div>
-          <div className="panelFirstName">{ReactHtmlParser(panel.firstname)}</div>
-          <div className="panelName">{panel.name}</div>
-          <div className="panelText">{ReactHtmlParser(panel.text)}</div>
-      </div>
+          <div className="panelTextBox">
+            <div className="panelTitle">{panel.title}</div>
+            <div className="panelFirstName">{ReactHtmlParser(panel.firstname)}</div>
+            <div className="panelName">{panel.name}</div>
+          </div>
+            <div className="panelText">{ReactHtmlParser(panel.text)}</div>
+        </div>
           <Link to={`/news/${panel.link}`} >
             <div className="panelLinkButton">more > > > </div>
           </Link>
