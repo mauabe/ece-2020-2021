@@ -11,9 +11,7 @@
   overflow: hidden;
   flex-direction: row;
   flex-wrap: no-wrap;
-    // transform-style: preserve-3d;
-    // transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-    //   rotateY(calc(-45deg * var(--dir)));
+
 
   .panel{
     font-size: 0.9rem;
@@ -38,65 +36,72 @@
 
     .panelContent {
       display: flex;
-      flex-direction: column;
       flex: 1 1 100%;
-      font-family:'Quattrocento Sans', sans-serif;
-      font-size: 1.1em;
-      top: 40%;
+      top: 45%;
       position: absolute;
       margin: 0 0.5em 0 1em;
       align-items: flex-start;
-      justify-items: center;
+      flex-direction: column;
 
-      .panelTitle, .panelFirstName {
+      .panelTextBox{
         display: flex;
-        flex: 1 1 100%;
-        font-family:'Quattrocento Sans', sans-serif;
-        font-size: 1.3em;
-        letter-spacing: 0.1ch;
-        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.72);
+        flex-direction: column;
+        min-width: 5rem;
+        max-width: 10rem;
         margin: 0;
-      }
-      .panelName {
-        color: $gallery;
-        display: flex;
-        flex: 1 1 100%;
-        // top: 50%;
-        font-family:'Grand Hotel', cursive;
-        font-size: 2.0em;
-        font-weight: 700;
-        margin: 0.2em 0;
-        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.72);
-        &:hover{
-          color: $mercury;
+
+        .panelTitle, .panelFirstName {
+          display: flex;
+          flex: 1 1 100%;
+          font-family:'Quattrocento Sans', sans-serif;
+          font-size: 1.3em;
+          letter-spacing: 0.1ch;
+          text-shadow: 0 4px 6px rgba(0, 0, 0, 0.72);
+        }
+        .panelName {
+          display: flex;
+          color: $gallery;
+          flex: 1 1 100%;
+          font-family:'Grand Hotel', cursive;
+          font-size: 2.0em;
+          font-weight: 700;
+          // margin: 0.2em 0;
+          text-shadow: 0 4px 10px rgba(0, 0, 0, 0.72);
         }
       }
       .panelText {
         display: flex;
+        max-width: 6rem;
         line-height: 1.4;
         font-family:'Quattrocento Sans', sans-serif;
         font-size: 1.3em;
         opacity: 0;
-        margin: 0.7rem 0;
         text-shadow: 0 4px 6px rgba(0, 0, 0, 0.72);
-        padding: 0.5em 4em 0.5em 0;
+        margin: 0;
+        padding: 0.5em 1em 0.5em 0;
       }
 
     } //end panelContent
 
     .panelLinkButton{
       display: flex;
-      bottom: 16%;
+      bottom: 12%;
       font-family:'Quattrocento Sans', sans-serif;
       font-weight: 700;
-      font-size: 1em;
       width: 5em;
-      height: 1.5em;
+      height: 1.3em;
       opacity: 0;
       background-color: orange;
       position: absolute;
-      margin: 0 0.5em;
-      padding: 0.5em;
+      margin: 0 1em;
+      padding: 1em;
+      align-items: center;
+
+      @media only screen and (max-width: 600px) {
+          opacity: 0;
+          background-color: transparent;
+          color: transparent;
+      }
     }
 
 
@@ -108,8 +113,6 @@
       .panelText{
         transition: opacity 0.3s ease-in-out 0.3s;
         opacity: 1;
-        padding: 0.5em 4em 0.5em 0;
-
       }
       .panelLinkButton {
         transition: opacity 1.5s ease-in-out 0.3s;
@@ -119,58 +122,58 @@
     }
   } // end of .panel
 
-  @media only screen and (max-width: 1200px) {
-    .panel {
-      font-size: 0.8em;
-    };
-  }
-  @media only screen and (max-width: 950px) {
-    .panel {
-      font-size: 0.7em;
-    };
-  }
-  // @media only screen and (max-width: 800px) {
-  //   .panelsContainer{
-  //     .panel {
-  //       font-size: 0.6em;
-  //     };
-  //   }
-  // }
+
 } //end panelsContainer
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+  .panel {
+    font-size: 0.9em;
+  };
+}
+@media only screen and (max-width: 900px) {
   .panelsContainer{
     flex-direction: column;
     .panel {
+      // font-size: 0.7em;
       flex-direction: row;
-      font-size: 0.6em;
-      min-width: 100%;
+      max-width: 100%;
+      max-height: 14%;
+      filter: grayscale(0.01);
       .panelContent {
+        top: 2rem;
         flex-direction: row;
-        margin: 0 5em;
-        .panelTitle, .panelFirstName {
-          margin: 0 .5em;
-          width: 5em;
-        }
-        .panelName {
-          margin: 0 .5em;
-          min-width: 5em;
+        margin: 0 0 0 5rem;
+        .panelTextBox{
+          min-width: 9rem;
+          margin: 0;
         }
         .panelText {
-          min-width: 18em;
-          margin: 0 2em 0 0;
+          min-width: 9rem;
+          max-width: 15rem;
+          top: 2rem;
+          margin: 0;
           opacity: 1;
         }
-        .panelLinkButton {
-          opacity: 0;
-        }
       }
+      .panelLinkButton {
+        max-height: 1.0em;
+        font-size: .9em;
+        top: 2rem;
+        right: 4rem;
+        opacity: 1;
+        margin: 0;
+        z-index: 20;
+       }
+
       &:hover{
         transition: filter 0.3s ease-in-out 0.3s;
         filter: grayscale(0.01);
       }
     }
   }
+
+
+
   .article {
     margin-left: 4%;
     margin-right: 4%;
